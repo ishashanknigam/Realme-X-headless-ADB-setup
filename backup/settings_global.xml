@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<settings version="291">
+  <setting id="194" name="carrier_app_names" value="com.google.android.apps.tycho:Google Fi" package="com.google.android.gsf" />
+  <setting id="28" name="multi_sim_defaut_data_call" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="20" name="mobile_data0" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="21" name="mobile_data1" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="22" name="mobile_data2" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="54" name="low_battery_sound_timeout" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="3" name="bluetooth_absolute_volume_on" value="on" package="android" defaultValue="on" defaultSysSet="true" />
+  <setting id="44" name="car_undock_sound" value="/system/media/audio/ui/Undock.ogg" package="android" defaultValue="/system/media/audio/ui/Undock.ogg" defaultSysSet="true" />
+  <setting id="259" name="Phenotype_boot_count" value="7" package="com.google.android.gms" />
+  <setting id="60" name="volte_vt_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="197" name="Phenotype_flags" value="activity_starts_logging_enabled:alarm_manager_constants:alarm_manager_dummy_flags:always_on_display_constants:anomaly_config:anomaly_config_version:anomaly_detection_constants:app_idle_constants:app_standby_enabled:appop_history_parameters:backup_agent_timeout_parameters:battery_stats_constants:battery_tip_constants:binder_calls_stats:ble_scan_balanced_interval_ms:ble_scan_balanced_window_ms:ble_scan_low_power_interval_ms:ble_scan_low_power_window_ms:blocking_helper_dismiss_to_view_ratio:blocking_helper_streak_limit:device_idle_constants:emergency_call_codes_data:gnss_satellite_blacklist:hybrid_sysui_battery_warning_flags:job_scheduler_constants:job_scheduler_quota_controller_constants:job_scheduler_time_controller_constants:location_background_throttle_interval_ms:location_ignore_settings_package_whitelist:network_watchlist_enabled:night_display_forced_auto_mode_available:notification_snooze_options:phenotype_test_setting:settings_use_external_provider_api:settings_use_psd_api:smart_replies_in_notifications_flags:sqlite_compatibility_wal_flags:sys_uidcpupower:text_classifier_constants:zram_enabled" package="com.google.android.gms" />
+  <setting id="63" name="development_settings_enabled" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="11" name="window_animation_scale" value="1.0" package="android" defaultValue="1.0" defaultSysSet="true" />
+  <setting id="134" name="_boot_Phenotype_flags" value="" package="com.google.android.gms" />
+  <setting id="209" name="battery_stats_constants" value="track_cpu_times_by_proc_state=false" package="com.google.android.gms" />
+  <setting id="217" name="blocking_helper_streak_limit" package="com.google.android.gms" />
+  <setting id="189" name="lang_id_content_url" value="https://www.gstatic.com/android/text_classifier/langid/q/v1/model.smfb" package="com.google.android.gsf" />
+  <setting id="232" name="settings_use_psd_api" value="1" package="com.google.android.gms" />
+  <setting id="120" name="multi_sim_data_call" value="1" package="com.android.phone" defaultValue="1" defaultSysSet="true" />
+  <setting id="81" name="show_zen_settings_suggestion" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="173" name="wifi_auto_change_access_point" value="0" package="com.coloros.bootreg" defaultValue="0" defaultSysSet="true" />
+  <setting id="110" name="settings_network_and_internet_v2" value="false" package="com.android.phone" defaultValue="false" defaultSysSet="true" />
+  <setting id="212" name="ble_scan_balanced_interval_ms" value="730" package="com.google.android.gms" />
+  <setting id="187" name="verifier_timeout" value="17000" package="com.google.android.gsf" />
+  <setting id="218" name="device_idle_constants" value="light_after_inactive_to=180000,light_pre_idle_to=180000," package="com.google.android.gms" />
+  <setting id="103" name="apn_version" value="421" package="com.android.phone" defaultValue="421" defaultSysSet="true" />
+  <setting id="126" name="mode_ringer" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="48" name="default_install_location" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="33" name="wifi_display_on" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="57" name="device_name" value="RMX1901" package="android" defaultValue="RMX1901" defaultSysSet="true" />
+  <setting id="15" name="wifi_networks_available_notification_on" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="82" name="zen_settings_updated" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="215" name="ble_scan_low_power_window_ms" value="512" package="com.google.android.gms" />
+  <setting id="40" name="dock_sounds_enabled_when_accessbility" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="112" name="oppo_comm_phone_intercept_settings_opti_version" value="3" package="com.android.phone" defaultValue="3" defaultSysSet="true" />
+  <setting id="97" name="webview_fallback_logic_enabled" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="175" name="wifi_auto_change_network" value="0" package="com.coloros.bootreg" defaultValue="0" defaultSysSet="true" />
+  <setting id="198" name="activity_starts_logging_enabled" value="1" package="com.google.android.gms" />
+  <setting id="16" name="bluetooth_on" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="260" name="reboot_for_cos" value="0" package="com.redteamobile.roaming" />
+  <setting id="236" name="text_classifier_constants" package="com.google.android.gms" />
+  <setting id="19" name="mobile_data" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="255" name="network_watchlist_last_report_time" value="1790620200000" package="android" defaultValue="1790620200000" defaultSysSet="true" />
+  <setting id="263" name="oppo.oroaming.nettime" value="1790692395140;55687" package="com.redteamobile.roaming" />
+  <setting id="71" name="database_creation_buildid" value="QKQ1.190918.001" package="android" defaultValue="QKQ1.190918.001" defaultSysSet="true" />
+  <setting id="49" name="emergency_tone" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="181" name="cert_pin_content_url" value="https://www.gstatic.com/android/config_update/08202014-pins.txt" package="com.google.android.gsf" />
+  <setting id="69" name="chinese_number_heads" value="13,15,17,18,16,19" package="android" defaultValue="13,15,17,18,16,19" defaultSysSet="true" />
+  <setting id="24" name="multi_sim_sms_prompt" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="79" name="max_sound_trigger_detection_service_ops_per_day" value="1000" package="android" defaultValue="1000" defaultSysSet="true" />
+  <setting id="72" name="add_users_when_locked" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="46" name="dock_audio_media_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="203" name="anomaly_config_version" value="10" package="com.google.android.gms" />
+  <setting id="64" name="verifier_verify_adb_installs" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="165" name="oppo_commcenter_wifi_detect_result" value="" package="com.coloros.wirelesssettings" defaultValue="" defaultSysSet="true" />
+  <setting id="90" name="global.wifi.heytap.support" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="219" name="emergency_call_codes_data" package="com.google.android.gms" />
+  <setting id="252" name="oppo.comm.network.monitor.available" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="240" name="ble_scan_always_enabled" value="1" package="com.google.android.gms" />
+  <setting id="172" name="oppo.comm.wifi.monitor.setting" value="0" package="com.coloros.wirelesssettings" defaultValue="0" defaultSysSet="true" />
+  <setting id="191" name="conversation_actions_content_url" value="https://www.gstatic.com/android/text_classifier/actions/q/v104/en.model" package="com.google.android.gsf" />
+  <setting id="257" name="adb_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="36" name="trusted_sound" value="/system/media/audio/ui/Trusted.ogg" package="android" defaultValue="/system/media/audio/ui/Trusted.ogg" defaultSysSet="true" />
+  <setting id="35" name="unlock_sound" value="/system/media/audio/ui/Unlock.ogg" package="android" defaultValue="/system/media/audio/ui/Unlock.ogg" defaultSysSet="true" />
+  <setting id="2" name="airplane_mode_radios" value="cell,wifi,nfc,wimax" package="android" defaultValue="cell,wifi,nfc,wimax" defaultSysSet="true" />
+  <setting id="32" name="wifi_max_dhcp_retry_count" value="9" package="android" defaultValue="9" defaultSysSet="true" />
+  <setting id="138" name="oppo_comm_contacts_hide_card_recognize" value="0" package="com.android.contacts" />
+  <setting id="113" name="oppo_harass_intercept_mark_number_enbale" value="3" package="com.android.phone" defaultValue="3" defaultSysSet="true" />
+  <setting id="66" name="auto_time_gps" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="183" name="carrier_app_whitelist" value="4C36AF4A5BDAD97C1F3D8B283416D244496C2AC5EAFE8226079EF6F676FD1859:com.google.android.apps.tycho" package="com.google.android.gsf" />
+  <setting id="4" name="airplane_mode_toggleable_radios" value="bluetooth,wifi,nfc" package="android" defaultValue="bluetooth,wifi,nfc" defaultSysSet="true" />
+  <setting id="237" name="zram_enabled" value="1" package="com.google.android.gms" />
+  <setting id="56" name="heads_up_notifications_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="124" name="low_power" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="223" name="job_scheduler_quota_controller_constants" value="max_job_count_per_rate_limiting_window=10,rate_limiting_window_ms=60000,max_job_count_active=75,max_session_count_active=75" package="com.google.android.gms" />
+  <setting id="222" name="job_scheduler_constants" value="" package="com.google.android.gms" />
+  <setting id="84" name="charging_vibration_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="190" name="sms_short_codes_metadata_url" value="https://www.gstatic.com/android/config_update/05132026-sms-denylist-metadata.txt" package="com.google.android.gsf" />
+  <setting id="85" name="oppo_wifi_smart_connect" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="125" name="zen_mode_ringer_level" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="52" name="preferred_network_mode" value="9,0" package="android" defaultValue="9,0" defaultSysSet="true" />
+  <setting id="111" name="oppo_comm_phone_show_ussd_dialog" value="0" package="com.android.phone" defaultValue="0" defaultSysSet="true" />
+  <setting id="73" name="bluetooth_disabled_profiles" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="228" name="night_display_forced_auto_mode_available" value="0" package="com.google.android.gms" />
+  <setting id="130" name="guardelf_battery_time" value="0=0=0=0" package="com.coloros.oppoguardelf" defaultValue="0=0=0=0" defaultSysSet="true" />
+  <setting id="193" name="send_action_app_error" value="1" package="com.google.android.gsf" />
+  <setting id="221" name="hybrid_sysui_battery_warning_flags" value="" package="com.google.android.gms" />
+  <setting id="174" name="user_click_wlan_assistant_switch" value="0" package="com.coloros.bootreg" defaultValue="0" defaultSysSet="true" />
+  <setting id="42" name="desk_undock_sound" value="/system/media/audio/ui/Undock.ogg" package="android" defaultValue="/system/media/audio/ui/Undock.ogg" defaultSysSet="true" />
+  <setting id="86" name="zen_duration" package="android" />
+  <setting id="88" name="soft_ap_timeout_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="76" name="mobile_data_always_on" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="250" name="oppo.comm.network.monitor.portal" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="220" name="gnss_satellite_blacklist" value="" package="com.google.android.gms" />
+  <setting id="122" name="simsettings_manual_select_1" value="" package="com.android.phone" defaultValue="" defaultSysSet="true" />
+  <setting id="123" name="simsettings_manual_select_2" value="" package="com.android.phone" defaultValue="" defaultSysSet="true" />
+  <setting id="9" name="wifi_sleep_policy" value="2" package="android" defaultValue="2" defaultSysSet="true" />
+  <setting id="39" name="dock_sounds_enabled" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="239" name="wifi_scan_always_enabled" value="1" package="com.google.android.gms" defaultValue="1" defaultSysSet="true" />
+  <setting id="59" name="ntp_server_2" value="persist.vendor.ntp.svr_2" package="android" defaultValue="persist.vendor.ntp.svr_2" defaultSysSet="true" />
+  <setting id="241" name="network_recommendations_enabled" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="201" name="always_on_display_constants" package="com.google.android.gms" />
+  <setting id="234" name="sqlite_compatibility_wal_flags" value="" package="com.google.android.gms" />
+  <setting id="182" name="smart_selection_metadata_url" value="https://www.gstatic.com/android/text_classifier/q/v714/en.fb.metadata" package="com.google.android.gsf" />
+  <setting id="43" name="car_dock_sound" value="/system/media/audio/ui/Dock.ogg" package="android" defaultValue="/system/media/audio/ui/Dock.ogg" defaultSysSet="true" />
+  <setting id="207" name="appop_history_parameters" value="mode=HISTORICAL_MODE_DISABLED,baseIntervalMillis=1000,intervalMultiplier=10" package="com.google.android.gms" />
+  <setting id="226" name="location_ignore_settings_package_whitelist" value="com.google.android.gms,com.google.android.dialer" package="com.google.android.gms" />
+  <setting id="185" name="conversation_actions_metadata_url" value="https://www.gstatic.com/android/text_classifier/actions/q/v104/en.model.metadata" package="com.google.android.gsf" />
+  <setting id="116" name="oppo_harass_intercept_mark_number_harassment" value="0" package="com.android.phone" defaultValue="0" defaultSysSet="true" />
+  <setting id="80" name="sound_trigger_detection_service_op_timeout" value="15000" package="android" defaultValue="15000" defaultSysSet="true" />
+  <setting id="200" name="alarm_manager_dummy_flags" package="com.google.android.gms" />
+  <setting id="37" name="power_sounds_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="8" name="stay_on_while_plugged_in" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="225" name="location_background_throttle_interval_ms" value="600000" package="com.google.android.gms" />
+  <setting id="245" name="package_verifier_user_consent" value="1" package="com.android.vending" />
+  <setting id="58" name="lid_behavior" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="214" name="ble_scan_low_power_interval_ms" value="10240" package="com.google.android.gms" />
+  <setting id="95" name="isolated_storage_remote" package="android" />
+  <setting id="51" name="hide_carrier_network_settings" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="161" name="zen_mode_config_etag" value="-1708188630" package="android" defaultValue="-1708188630" defaultSysSet="true" />
+  <setting id="47" name="set_install_location" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="180" name="network_scoring_ui_enabled" value="1" package="com.google.android.gsf" />
+  <setting id="91" name="zen_mode" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="204" name="anomaly_detection_constants" package="com.google.android.gms" />
+  <setting id="12" name="transition_animation_scale" value="1.0" package="android" defaultValue="1.0" defaultSysSet="true" />
+  <setting id="170" name="oppo.comm.network.monitor.ssid" value='"Shubham Network"' package="android" defaultValue='"Shubham Network"' defaultSysSet="true" />
+  <setting id="229" name="notification_snooze_options" package="com.google.android.gms" />
+  <setting id="100" name="show_gamespace_edge_panel" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="205" name="app_idle_constants" value="" package="com.google.android.gms" />
+  <setting id="199" name="alarm_manager_constants" value="" package="com.google.android.gms" />
+  <setting id="13" name="package_verifier_enable" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="184" name="lang_id_metadata_url" value="https://www.gstatic.com/android/text_classifier/langid/q/v1/model.smfb.metadata" package="com.google.android.gsf" />
+  <setting id="65" name="telephony_misc_feature_config" value="3" package="android" defaultValue="3" defaultSysSet="true" />
+  <setting id="186" name="smart_selection_content_url" value="https://www.gstatic.com/android/text_classifier/q/v714/en.fb" package="com.google.android.gsf" />
+  <setting id="127" name="network_recommendations_package" value="com.google.android.gms" package="android" defaultValue="com.google.android.gms" defaultSysSet="true" />
+  <setting id="1" name="theater_mode_on" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="17" name="cdma_cell_broadcast_sms" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="216" name="blocking_helper_dismiss_to_view_ratio" package="com.google.android.gms" />
+  <setting id="247" name="upload_apk_enable" value="1" package="com.android.vending" />
+  <setting id="242" name="can_update_at_night" value="0" package="com.coloros.bootreg" defaultValue="0" defaultSysSet="true" />
+  <setting id="89" name="airplane_mode_on" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="83" name="zen_settings_suggestion_viewed" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="75" name="default_restrict_background_data" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="38" name="low_battery_sound" value="/system/media/audio/ui/LowBattery.ogg" package="android" defaultValue="/system/media/audio/ui/LowBattery.ogg" defaultSysSet="true" />
+  <setting id="87" name="apply_ramping_ringer" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="230" name="phenotype_test_setting" value="V15AboveInEnglish" package="com.google.android.gms" />
+  <setting id="101" name="game_dock_panel_state" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="227" name="network_watchlist_enabled" value="" package="com.google.android.gms" />
+  <setting id="109" name="show_cellbroadcast" value="true" package="com.android.cellbroadcastreceiver" defaultValue="true" defaultSysSet="true" />
+  <setting id="29" name="netstats_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="74" name="wifi_wakeup_enabled" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="206" name="app_standby_enabled" value="1" package="com.google.android.gms" />
+  <setting id="195" name="cert_pin_metadata_url" value="https://www.gstatic.com/android/config_update/08202014-metadata.txt" package="com.google.android.gsf" />
+  <setting id="53" name="subscription_mode" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="192" name="sms_short_codes_content_url" value="https://www.gstatic.com/android/config_update/05132026-sms-denylist.txt" package="com.google.android.gsf" />
+  <setting id="238" name="assisted_gps_enabled" value="1" package="com.google.android.gsf" defaultValue="1" defaultSysSet="true" />
+  <setting id="233" name="smart_replies_in_notifications_flags" value="enabled=true,max_squeeze_remeasure_attempts=3,requires_targeting_p=true" package="com.google.android.gms" />
+  <setting id="34" name="lock_sound" value="/system/media/audio/ui/Lock.ogg" package="android" defaultValue="/system/media/audio/ui/Lock.ogg" defaultSysSet="true" />
+  <setting id="7" name="auto_time_zone" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="251" name="wifi_on" value="2" package="android" defaultValue="2" defaultSysSet="true" />
+  <setting id="67" name="wifi_country_code" value="US" package="android" defaultValue="US" defaultSysSet="true" />
+  <setting id="77" name="wireless_charging_started_sound" value="/system/media/audio/ui/ChargingStarted.ogg" package="android" defaultValue="/system/media/audio/ui/ChargingStarted.ogg" defaultSysSet="true" />
+  <setting id="179" name="content_capture_service_explicitly_enabled" value="default" package="com.google.android.gsf" />
+  <setting id="246" name="device_provisioned" value="1" package="com.google.android.setupwizard" defaultValue="1" defaultSysSet="true" />
+  <setting id="202" name="anomaly_config" value="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" package="com.google.android.gms" />
+  <setting id="99" name="emergency_affordance_needed" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="70" name="battery_saver_constants" value="adjust_brightness_disabled=true" package="android" defaultValue="adjust_brightness_disabled=true" defaultSysSet="true" />
+  <setting id="210" name="battery_tip_constants" value="app_restriction_enabled=true" package="com.google.android.gms" />
+  <setting id="231" name="settings_use_external_provider_api" value="1" package="com.google.android.gms" />
+  <setting id="119" name="sysui_demo_allowed" package="com.android.systemui" />
+  <setting id="118" name="oppo_harass_intercept_mark_number_intermediary" value="0" package="com.android.phone" defaultValue="0" defaultSysSet="true" />
+  <setting id="6" name="auto_time" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="196" name="autofill_compat_mode_allowed_packages" value="com.brave.browser[url_bar]:com.brave.browser_beta[url_bar]:com.brave.browser_nightly[url_bar]:com.microsoft.emmx[url_bar]:com.microsoft.emmx.beta[url_bar]:com.microsoft.emmx.canary[url_bar]:com.microsoft.emmx.dev[url_bar]:com.opera.browser[url_field]:com.opera.browser.beta[url_bar]:com.opera.mini.native[url_bar]:com.opera.mini.native.beta[url_bar]:com.sec.android.app.sbrowser[location_bar_edit_text]:com.sec.android.app.sbrowser.beta[location_bar_edit_text]:org.mozilla.fennec_aurora[url_bar]:org.mozilla.firefox[url_bar]:org.mozilla.firefox_beta[url_bar]" package="com.google.android.gsf" />
+  <setting id="23" name="multi_sim_voice_prompt" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="30" name="install_non_market_apps" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="31" name="usb_mass_storage_enabled" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="235" name="sys_uidcpupower" value="" package="com.google.android.gms" />
+  <setting id="114" name="oppo_comm_phone_intercept_notify" value="0" package="com.android.phone" defaultValue="0" defaultSysSet="true" />
+  <setting id="262" name="oppo.diff_time" value="1790692339453" package="com.redteamobile.roaming" />
+  <setting id="115" name="oppo_harass_intercept_mark_number_fraud" value="3" package="com.android.phone" defaultValue="3" defaultSysSet="true" />
+  <setting id="129" name="data_space_monitor_curve_switch" value="1" package="com.coloros.oppoguardelf" defaultValue="1" defaultSysSet="true" />
+  <setting id="26" name="multi_sim_sms" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="121" name="multi_sim_voice_call" value="2147483643" package="com.android.phone" defaultValue="2147483643" defaultSysSet="true" />
+  <setting id="92" name="tether_enable_legacy_dhcp_server" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="50" name="call_auto_retry" value="0" package="android" defaultValue="0" defaultSysSet="true" />
+  <setting id="131" name="audio_safe_volume_state" value="3" package="android" defaultValue="3" defaultSysSet="true" />
+  <setting id="258" name="boot_count" value="7" package="android" defaultValue="7" defaultSysSet="true" />
+  <setting id="117" name="oppo_harass_intercept_mark_number_advertising" value="0" package="com.android.phone" defaultValue="0" defaultSysSet="true" />
+  <setting id="68" name="auto_add_number_prefix" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+  <setting id="211" name="binder_calls_stats" value="" package="com.google.android.gms" />
+  <setting id="41" name="desk_dock_sound" value="/system/media/audio/ui/Dock.ogg" package="android" defaultValue="/system/media/audio/ui/Dock.ogg" defaultSysSet="true" />
+  <setting id="213" name="ble_scan_balanced_window_ms" value="183" package="com.google.android.gms" />
+  <setting id="224" name="job_scheduler_time_controller_constants" value="" package="com.google.android.gms" />
+  <setting id="208" name="backup_agent_timeout_parameters" value="" package="com.google.android.gms" />
+  <setting id="164" name="wifi_5g_band_support" value="1" package="android" defaultValue="1" defaultSysSet="true" />
+</settings>
