@@ -486,3 +486,33 @@ Never commit:
 ```
 
 The host ADB private key must remain on the host only.
+
+## 16. Permanent Wireless ADB
+
+After USB ADB is working, enable persistent TCP ADB:
+
+```fish
+adb shell su -c 'setprop persist.adb.tcp.port 5555'
+adb shell su -c 'setprop service.adb.tcp.port 5555'
+adb shell su -c 'stop adbd; start adbd'
+```
+
+Reconnect using the phone's Wi-Fi IP:
+
+```fish
+adb connect PHONE_IP:5555
+```
+
+Verify:
+```fish
+adb -s PHONE_IP:5555 shell 'getprop persist.adb.tcp.port'
+adb -s PHONE_IP:5555 shell 'toybox netstat -lnt | grep 5555'
+```
+
+Expected:
+```text
+5555
+tcp6 ... :::5555 ... LISTEN
+```
+
+The configuration was tested successfully across a complete Android reboot. The phone's DHCP address may change, so use the current Wi-Fi IP when connecting.
