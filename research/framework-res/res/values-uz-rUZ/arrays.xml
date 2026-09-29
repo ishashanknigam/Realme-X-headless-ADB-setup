@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>Shaxsiy</item>
+        <item>Ish</item>
+        <item>Boshqalar</item>
+        <item>Individual sozlash</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>Ish</item>
+        <item>Boshqa</item>
+        <item>Individual</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>Bosh ekran</item>
+        <item>Telefon</item>
+        <item>Birlik</item>
+        <item>Ishxona faksi</item>
+        <item>Uy faksi</item>
+        <item>Peyjer</item>
+        <item>Boshqalar</item>
+        <item>Individual sozlash</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>Bosh ekran</item>
+        <item>Ish</item>
+        <item>Boshqa</item>
+        <item>Individual</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>Bosh ekran</item>
+        <item>Ish</item>
+        <item>Boshqalar</item>
+        <item>Moslashtirish</item>
+    </string-array>
+</resources>

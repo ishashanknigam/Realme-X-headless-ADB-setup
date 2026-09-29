@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Otkaži</string>
+    <string name="cut">Izreži</string>
+    <string name="no">Otkaži</string>
+    <string name="paste">Zalijepi</string>
+    <string name="selectAll">Odaberi sve</string>
+    <string name="add_account_label">Dodaj račun</string>
+    <string name="autofill_save_no">Kasnije</string>
+    <string name="autofill_save_title_with_2types">Spremi %2$s i %1$s u %3$s?</string>
+    <string name="autofill_save_type_username">Račun</string>
+    <string name="autofill_save_yes">Spremi</string>
+    <string name="date_and_time" formatted="false">%H:%M:%S %-e.%b.%Y.</string>
+    <string name="date_time">%2$s %1$s</string>
+    <string name="decline_remote_bugreport_action">Odbij</string>
+    <string name="emailTypeCustom">Prilagođ.</string>
+    <string name="global_action_emergency">Poziv u nuždi</string>
+    <string name="kg_login_password_hint">Sigurnosni kôd</string>
+    <string name="lockscreen_glogin_password_hint">Sigurnosni kôd</string>
+    <string name="month_day_year" formatted="false">%-e. %B %Y.</string>
+    <string name="notification_hidden_text">Unesi za pregled sadržaja poruke</string>
+    <string name="permgroupdesc_storage">Pristupite fotografijama, medijskom sadržaju i datotekama na svom uređaju</string>
+    <string name="phoneTypeFaxHome">Kućni faks</string>
+    <string name="phoneTypeFaxWork">Služb. faks</string>
+    <string name="policydesc_forceLock">Upravljanje načinom i vremenom kada se zaslon zaključava.</string>
+    <string name="policylab_resetPassword">Mijenjanje lozinke za zaključavanje zaslona</string>
+    <string name="relationTypeSpouse">Bračni drug</string>
+    <string name="share_remote_bugreport_action">Dijeli</string>
+    <string name="sms">Poruka</string>
+    <string name="ssl_certificate">Sigurnosni certifikat</string>
+    <string name="time_of_day" formatted="false">%H:%M:%S</string>
+    <string name="zen_mode_default_every_night_name">Spavanje</string>
+</resources>

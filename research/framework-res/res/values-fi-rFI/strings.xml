@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Peruuta</string>
+    <string name="cut">Leikkaa</string>
+    <string name="paste">Liitä</string>
+    <string name="selectAll">Kaikki</string>
+    <string name="add_account_label">Lisää tili</string>
+    <string name="autofill_save_no">Myöhemmin</string>
+    <string name="autofill_save_title_with_2types">Tallennetaanko %2$s ja %1$s kohteeseen %3$s?</string>
+    <string name="autofill_save_type_username">Tili</string>
+    <string name="autofill_save_yes">Tallenna</string>
+    <string name="date_and_time" formatted="false">%-k.%M.%S %-e.%-m.%Y</string>
+    <string name="date_time">%2$s %1$s</string>
+    <string name="decline_remote_bugreport_action">Hylkää</string>
+    <string name="emailTypeHome">Koti</string>
+    <string name="global_action_emergency">Hätäpuhelu</string>
+    <string name="kg_login_password_hint">Salasana</string>
+    <string name="lockscreen_glogin_password_hint">Salasana</string>
+    <string name="month_day_year" formatted="false">%-e. %B %Y</string>
+    <string name="notification_hidden_text">Syötä nähdäksesi viestin sisällön</string>
+    <string name="permgroupdesc_storage">Käytä laitteessa olevia valokuvia, mediasisältöjä ja tiedostoja</string>
+    <string name="permgrouplab_contacts">Yhteystiedot</string>
+    <string name="policydesc_forceLock">Hallinnoi, milloin ja miten näyttö lukittuu.</string>
+    <string name="policylab_forceLock">Lukita ruudun</string>
+    <string name="policylab_resetPassword">muuttaa näytön lukituksen</string>
+    <string name="policylab_wipeData">pyyhkiä kaikki tiedot</string>
+    <string name="relationTypeManager">Esimies</string>
+    <string name="share_remote_bugreport_action">Jaa</string>
+    <string name="sms">Viesti</string>
+    <string name="ssl_certificate">Suojausvarmenne</string>
+    <string name="time_of_day" formatted="false">%-k.%M.%S</string>
+    <string name="zen_mode_default_every_night_name">Lepotila</string>
+</resources>

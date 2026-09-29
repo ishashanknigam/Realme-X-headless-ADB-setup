@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Atcelt</string>
+    <string name="cut">Izgriezt</string>
+    <string name="paste">Ielīmēt</string>
+    <string name="selectAll">Atlasīt visu</string>
+    <string name="add_account_label">Pievienot kontu</string>
+    <string name="autofill_save_no">Vēlāk</string>
+    <string name="autofill_save_title_with_2types">Vai saglabāt šos: %2$s un %1$s šim: %3$s?</string>
+    <string name="autofill_save_type_username">Konts</string>
+    <string name="autofill_save_yes">Saglabāt</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Pārbaudīt ierakstīto tekstu</string>
+    <string name="capability_title_canRequestTouchExploration">Aktivizēt funkciju \"Pārlūkot pieskaroties\"</string>
+    <string name="date_and_time" formatted="false">%Y. gada %-e. %b, %H:%M:%S</string>
+    <string name="date_time">%1$s, %2$s</string>
+    <string name="decline_remote_bugreport_action">Noraidīt</string>
+    <string name="elapsed_time_short_format_mm_ss">%1$02d:%2$02d</string>
+    <string name="emailTypeWork">Darbs</string>
+    <string name="eventTypeCustom">Pielāgots</string>
+    <string name="eventTypeOther">Cits</string>
+    <string name="fingerprints">Pirkstu nospiedumi:</string>
+    <string name="global_action_emergency">Ārkārtas zvans</string>
+    <string name="kg_login_password_hint">Ieejas kods</string>
+    <string name="lockscreen_glogin_password_hint">Ieejas kods</string>
+    <string name="month_day_year" formatted="false">%Y. gada %-e. %B</string>
+    <string name="notification_hidden_text">Atveriet, lai skatītu ziņojuma saturu</string>
+    <string name="permgroupdesc_storage">Piekļūstiet fotoattēliem, multivides saturam un failiem savā ierīcē</string>
+    <string name="permgrouplab_location">Atrašanās vieta</string>
+    <string name="permgrouplab_microphone">Mikrofons</string>
+    <string name="permgrouplab_phone">Tālrunis</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">Krātuve</string>
+    <string name="phoneTypeFaxHome">Mājas fakss</string>
+    <string name="phoneTypeWork">Darbs</string>
+    <string name="postalTypeWork">Darbs</string>
+    <string name="share_remote_bugreport_action">Kopīgot</string>
+    <string name="sms">Ziņojums</string>
+    <string name="ssl_certificate">Drošības sertifikāts</string>
+    <string name="time_of_day" formatted="false">%H:%M:%S</string>
+    <string name="zen_mode_default_every_night_name">Miega režīms</string>
+</resources>

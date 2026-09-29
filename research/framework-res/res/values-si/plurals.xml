@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="autofill_picker_some_suggestions">
+        <item quantity="one">ස්වයං පිරවුම් යෝජනා %1$s</item>
+        <item quantity="other">ස්වයං පිරවුම් යෝජනා %1$s</item>
+    </plurals>
+    <plurals name="bugreport_countdown">
+        <item quantity="one">තත්පර %dකින් දෝෂ වාර්තාව සඳහා තිර රුවක් ලබා ගනිමින්</item>
+        <item quantity="other">තත්පර %dකින් දෝෂ වාර්තාව සඳහා තිර රුවක් ලබා ගනිමින්</item>
+    </plurals>
+    <plurals name="duration_days_relative">
+        <item quantity="one">දින %dකට පෙර</item>
+        <item quantity="other">දින %dකට පෙර</item>
+    </plurals>
+    <plurals name="duration_days_relative_future">
+        <item quantity="one">දින %dකින්</item>
+        <item quantity="other">දින %dකින්</item>
+    </plurals>
+    <plurals name="duration_days_shortest">
+        <item quantity="one">දි %d</item>
+        <item quantity="other">දි%d</item>
+    </plurals>
+    <plurals name="duration_days_shortest_future">
+        <item quantity="one">දි%dකදී</item>
+        <item quantity="other">දි%dකදී</item>
+    </plurals>
+    <plurals name="duration_hours_relative">
+        <item quantity="one">පැය %dකට පෙර</item>
+        <item quantity="other">පැය %dකට පෙර</item>
+    </plurals>
+    <plurals name="duration_hours_relative_future">
+        <item quantity="one">පැය %dකින්</item>
+        <item quantity="other">පැය %dකින්</item>
+    </plurals>
+    <plurals name="duration_hours_shortest">
+        <item quantity="one">පැ%d</item>
+        <item quantity="other">පැ%d</item>
+    </plurals>
+    <plurals name="duration_hours_shortest_future">
+        <item quantity="one">පැ%dකදී</item>
+        <item quantity="other">පැ%dකදී</item>
+    </plurals>
+    <plurals name="duration_minutes_relative">
+        <item quantity="one">මිනිත්තු %dකට පෙර</item>
+        <item quantity="other">මිනිත්තු %dකට පෙර</item>
+    </plurals>
+    <plurals name="duration_minutes_relative_future">
+        <item quantity="one">මිනිත්තු %dකින්</item>
+        <item quantity="other">මිනිත්තු %dකින්</item>
+    </plurals>
+    <plurals name="duration_minutes_shortest">
+        <item quantity="one">මි%d</item>
+        <item quantity="other">මි%d</item>
+    </plurals>
+    <plurals name="duration_minutes_shortest_future">
+        <item quantity="one">මි%dකදී</item>
+        <item quantity="other">මි%dකදී</item>
+    </plurals>
+    <plurals name="duration_years_relative">
+        <item quantity="one">වසර %dකට පෙර</item>
+        <item quantity="other">වසර %dකට පෙර</item>
+    </plurals>
+    <plurals name="duration_years_relative_future">
+        <item quantity="one">වසර %dකින්</item>
+        <item quantity="other">වසර %dකින්</item>
+    </plurals>
+    <plurals name="duration_years_shortest">
+        <item quantity="one">ව %d</item>
+        <item quantity="other">ව %d</item>
+    </plurals>
+    <plurals name="duration_years_shortest_future">
+        <item quantity="one">ව%dකදී</item>
+        <item quantity="other">ව%dකදී</item>
+    </plurals>
+    <plurals name="file_count">
+        <item quantity="one">ගොනු%1$s + %2$d</item>
+        <item quantity="other">ගොනු%1$s + %2$d</item>
+    </plurals>
+    <plurals name="kg_too_many_failed_attempts_countdown">
+        <item quantity="one">තත්පර %dකින් නැවත උත්සාහ කරන්න.</item>
+        <item quantity="other">තත්පර %dකින් නැවත උත්සාහ කරන්න.</item>
+    </plurals>
+    <plurals name="last_num_days">
+        <item quantity="one">පසුගිය දින %d</item>
+        <item quantity="other">පසුගිය දින %d</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="one">1 ප්‍රතිඵලය</item>
+        <item quantity="other">ප්‍රතිඵල අංක (%1$d)කින්%2$d</item>
+    </plurals>
+    <plurals name="pinpuk_attempts">
+        <item quantity="one">ඔබට තවමත් උත්සාහයන් %d ඉතිරියි. තවත් එක උත්සාහයක් අසමත් වීමෙන් පසු SIM අගුළු දමනු ඇත.</item>
+        <item quantity="other">ඔබට තවමත් උත්සාහයන් %d ඉතිරියි. තවත් එක උත්සාහයක් අසමත් වීමෙන් පසු SIM අගුළු දමනු ඇත.</item>
+    </plurals>
+    <plurals name="restr_pin_countdown">
+        <item quantity="one">කරුණාකර තත්පර 1 කින් නැවත උත්සාහ කරන්න.</item>
+        <item quantity="other">කරුණාකර තත්පර %d කින් නැවත උත්සාහ කරන්න.</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">අයිතම %1$d තේරිණි</item>
+        <item quantity="other">අයිතම %1$d තේරිණි</item>
+    </plurals>
+    <plurals name="ssl_ca_cert_warning">
+        <item quantity="one">සහතික අධිකාරි ස්ථාපනය කරන ලදී</item>
+        <item quantity="other">සහතික අධිකාරි ස්ථාපනය කරන ලදී</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="one">Wi-Fi ජාලයක් ඇත</item>
+        <item quantity="other">Wi-Fi ජාල ඇත</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="one">විවෘත Wi-Fi ජාලයක් ඇත</item>
+        <item quantity="other">විවෘත Wi-Fi ජාල ඇත</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours">
+        <item quantity="one">පැය 1</item>
+        <item quantity="other">පැය %d</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_short">
+        <item quantity="one">පැය 1</item>
+        <item quantity="other">පැය %d</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_summary">
+        <item quantity="one">පැය 1ක් සඳහාr (%2$s තෙක්)</item>
+        <item quantity="other">පැය 1ක් සඳහාr (%2$s තෙක්)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_summary_short">
+        <item quantity="one">පැය 1 (%2$s දක්වා)</item>
+        <item quantity="other">පැය %1$d (%2$s දක්වා)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes">
+        <item quantity="one">විනා 1</item>
+        <item quantity="other">විනා %d</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_short">
+        <item quantity="one">විනා 1</item>
+        <item quantity="other">විනා %d</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary">
+        <item quantity="one">විනාඩි 1 (%2$s දක්වා)</item>
+        <item quantity="other">විනාඩි %1$d (%2$s දක්වා)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary_short">
+        <item quantity="one">විනාඩි 1 (%2$s දක්වා)</item>
+        <item quantity="other">විනාඩි %1$d (%2$s දක්වා)</item>
+    </plurals>
+</resources>

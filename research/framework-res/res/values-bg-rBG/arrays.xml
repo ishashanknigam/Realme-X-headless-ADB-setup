@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>Личен</item>
+        <item>Работа</item>
+        <item>Други</item>
+        <item>Персонализиране</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>Работа</item>
+        <item>Друго</item>
+        <item>По избор</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>Вкъщи</item>
+        <item>Телефон</item>
+        <item>Unit</item>
+        <item>Работен факс</item>
+        <item>Домашен факс</item>
+        <item>Пейджър</item>
+        <item>Други</item>
+        <item>Персонализиране</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>Домашен</item>
+        <item>Служебен</item>
+        <item>Друг</item>
+        <item>По избор</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>Вкъщи</item>
+        <item>Работа</item>
+        <item>Други</item>
+        <item>Персонализиране</item>
+    </string-array>
+    <integer-array name="maps_starting_lat_lng">
+        <item>42733883</item>
+        <item>25485830</item>
+    </integer-array>
+    <integer-array name="maps_starting_zoom">
+        <item>4</item>
+    </integer-array>
+</resources>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Ofbriechen</string>
+    <string name="kg_login_password_hint">Passcode</string>
+    <string name="lockscreen_glogin_password_hint">Passcode</string>
+    <string name="notification_hidden_text">Eragoen, fir den Inhalt vum Message unzeweisen</string>
+    <string name="zen_mode_default_every_night_name">Schlofen</string>
+</resources>

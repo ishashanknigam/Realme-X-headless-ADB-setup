@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">ரத்து</string>
+    <string name="copy">நகலெடு</string>
+    <string name="cut">வெட்டு</string>
+    <string name="ok">சரி</string>
+    <string name="paste">ஒட்டு</string>
+    <string name="selectAll">எல்லாம்</string>
+    <string name="allow">அனுமதி</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| புதிய சிஸ்டமை தயார்ப்படுத்துகிறது, காத்திருங்கள் …</string>
+    <string name="android_upgrading_complete">ColorOS வெற்றிகரமாக தரமுயற்த்தப்பட்டது</string>
+    <string name="android_upgrading_starting_apps">ColorOS வெற்றிகரமாக தரமுயற்த்தப்பட்டது</string>
+    <string name="android_upgrading_title">ColorOS மேம்படுத்தப்படுகிறது …</string>
+    <string name="autofill_save_no">பிறகு</string>
+    <string name="autofill_save_title_with_2types">%2$s மற்றும் %1$s-ஐ %3$s-இல் சேமிக்கவா?</string>
+    <string name="autofill_save_type_username">கணக்கு</string>
+    <string name="autofill_save_yes">சேமி</string>
+    <string name="capability_title_canRequestFilterKeyEvents">உள்ளிட்ட திரையைக் கண்காணி</string>
+    <string name="deny">மறு</string>
+    <string name="lockscreen_carrier_default">சேவை இல்லை.</string>
+    <string name="notification_hidden_text">செய்தி உள்ளடக்கத்தைக் காண உள்ளிடு</string>
+    <string name="permgroupdesc_calendar">உங்கள் நாட்காட்டியை அணுகவும்</string>
+    <string name="permgroupdesc_camera">படங்கள் மற்றும் வீடியோக்களை எடு</string>
+    <string name="permgroupdesc_microphone">ஆடியோ பதிவுசெய்</string>
+    <string name="permgroupdesc_phone">ஃபோன் அழைப்புகளை செய் மற்றும் நிர்வகி</string>
+    <string name="permgroupdesc_sensors">உங்கள் பிரதான அடையாளங்கள் தொடர்பான சென்சார் தரவை அணுகு</string>
+    <string name="permgroupdesc_sms">SMS செய்திகளை அனுப்பு மற்றும் காட்டு</string>
+    <string name="permgroupdesc_storage">உங்கள் சாதனத்தில் உள்ள படங்கள், மீடியா உள்ளடக்கம் மற்றும் கோப்புகளை அணுகும்</string>
+    <string name="permgrouplab_calendar">நாட்காட்டி</string>
+    <string name="permgrouplab_camera">கேமரா</string>
+    <string name="permgrouplab_contacts">தொடர்புகள்</string>
+    <string name="permgrouplab_location">இருப்பிடம்</string>
+    <string name="permgrouplab_microphone">மைக்ரோபோன்</string>
+    <string name="permgrouplab_phone">ஃபோன்</string>
+    <string name="permgrouplab_sensors">உடல் சென்சார்</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">சேமிப்பகம்</string>
+    <string name="perms_new_perm_prefix">புதியது:</string>
+    <string name="policylab_forceLock">திரையைப் பூட்டுதல்</string>
+    <string name="policylab_resetPassword">திரைப் பூட்டை மாற்றுதல்</string>
+    <string name="policylab_wipeData">அனைத்து தரவினையும் அழி</string>
+    <string name="select_input_method">விசைப்பலகையை மாற்று</string>
+    <string name="share">பகிர்</string>
+    <string name="tethered_notification_message">அமைவுக்குத் தட்டவும்.</string>
+    <string name="vpn_text_long">\"%s\"க்கு இணைக்கப்பட்டது, நெட்வொர்க்கை நிர்வகிக்க தட்டவும்.</string>
+    <string name="zen_mode_default_every_night_name">உறக்கநிலை</string>
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Atšaukti</string>
+    <string name="cut">Iškirpti</string>
+    <string name="paste">Įklijuoti</string>
+    <string name="selectAll">PASIRINKTI VISKĄ</string>
+    <string name="add_account_label">Pridėti paskyrą</string>
+    <string name="autofill_save_no">Vėliau</string>
+    <string name="autofill_save_title_with_2types">Išsaugoti %2$s ir %1$s %3$s?</string>
+    <string name="autofill_save_type_username">Paskyra</string>
+    <string name="autofill_save_yes">Išsaugoti</string>
+    <string name="date_and_time" formatted="false">%H:%M:%S, %Y-%m-%d</string>
+    <string name="date_time">%2$s, %1$s</string>
+    <string name="decline_remote_bugreport_action">Atmesti</string>
+    <string name="elapsed_time_short_format_mm_ss">%1$02d:%2$02d</string>
+    <string name="emailTypeCustom">Pasirenkamas</string>
+    <string name="emailTypeHome">Namų</string>
+    <string name="emailTypeOther">Kitas</string>
+    <string name="eventTypeCustom">Pritaikytas</string>
+    <string name="global_action_emergency">Pagalbos skambutis</string>
+    <string name="imProtocolCustom">Pritaikytas</string>
+    <string name="kg_login_password_hint">Slaptažodis</string>
+    <string name="lockscreen_carrier_default">Nėra ryšio</string>
+    <string name="lockscreen_glogin_password_hint">Slaptažodis</string>
+    <string name="month_day_year" formatted="false">%Y m. %B %-e d.</string>
+    <string name="notification_hidden_text">Įeikite, kad peržiūrėtumėte praneš. turinį</string>
+    <string name="orgTypeCustom">Pritaikytas</string>
+    <string name="owner_name">Savininkas</string>
+    <string name="permgroupdesc_storage">Prieiga prie nuotraukų, medijos turinio ir failų jūsų įrenginyje</string>
+    <string name="phoneTypeCustom">Pasirenkamas</string>
+    <string name="postalTypeCustom">Pasirenkamas</string>
+    <string name="share_remote_bugreport_action">Bendrinti</string>
+    <string name="sms">Pranešimas</string>
+    <string name="ssl_certificate">Saugumo sertifikatas</string>
+    <string name="time_of_day" formatted="false">%H:%M:%S</string>
+    <string name="zen_mode_default_every_night_name">Užmigti</string>
+</resources>

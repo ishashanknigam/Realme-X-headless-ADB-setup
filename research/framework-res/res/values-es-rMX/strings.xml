@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancelar</string>
+    <string name="copy">Copiar</string>
+    <string name="cut">Cortar</string>
+    <string name="ok">Aceptar</string>
+    <string name="paste">Pegar</string>
+    <string name="selectAll">Sel. todo</string>
+    <string name="allow">Permitir</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| preparando sistema nuevo, por favor espere …</string>
+    <string name="android_upgrading_complete">ColorOS se actualizó exitosamente</string>
+    <string name="android_upgrading_starting_apps">ColorOS se actualizó exitosamente</string>
+    <string name="android_upgrading_title">Actualizando ColorOS …</string>
+    <string name="autofill_save_no">Más tarde</string>
+    <string name="autofill_save_title_with_2types">¿Guardar %2$s y %1$s en %3$s?</string>
+    <string name="autofill_save_type_username">Cuenta</string>
+    <string name="autofill_save_yes">Guardar</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Supervisar texto ingresado</string>
+    <string name="deny">Denegar</string>
+    <string name="lockscreen_carrier_default">Sin servicio</string>
+    <string name="notification_hidden_text">Ingresar para ver contenido del mensaje</string>
+    <string name="permgroupdesc_calendar">Acceder a su calendario</string>
+    <string name="permgroupdesc_camera">Tomar fotos y videos</string>
+    <string name="permgroupdesc_microphone">Grabar Audio</string>
+    <string name="permgroupdesc_phone">¿Permitir que ORoaming haga y administre llamadas telefónicas?</string>
+    <string name="permgroupdesc_sensors">Acceder a los datos del sensor relacionados con sus signos vitales</string>
+    <string name="permgroupdesc_sms">Enviar y ver mensajes SMS</string>
+    <string name="permgroupdesc_storage">Acceder a fotos, contenido de medios y archivos en su dispositivo</string>
+    <string name="permgrouplab_calendar">Calendario</string>
+    <string name="permgrouplab_camera">Cámara</string>
+    <string name="permgrouplab_contacts">Contactos</string>
+    <string name="permgrouplab_location">Ubicación</string>
+    <string name="permgrouplab_microphone">Micrófono</string>
+    <string name="permgrouplab_phone">Teléfono</string>
+    <string name="permgrouplab_sensors">Sensor corporal</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">Almacenamiento</string>
+    <string name="perms_new_perm_prefix">Nuevo:</string>
+    <string name="policylab_forceLock">Bloquear la pantalla</string>
+    <string name="policylab_resetPassword">Cambiar la contraseña de la pantalla de bloqueo</string>
+    <string name="policylab_wipeData">Borrar todos los datos</string>
+    <string name="select_input_method">Cambiar teclado</string>
+    <string name="share">Compartir</string>
+    <string name="tethered_notification_message">Toque para configurar</string>
+    <string name="vpn_text_long">Conectado a \"%s\", toque para administrar la red.</string>
+    <string name="zen_mode_default_every_night_name">Dormir</string>
+</resources>

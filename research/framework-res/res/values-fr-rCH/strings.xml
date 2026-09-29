@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_mode_done">Terminé</string>
+    <string name="add_account_label">Ajouter un compte</string>
+    <string name="autofill_save_no">Plus tard</string>
+    <string name="autofill_save_title_with_2types">Enregistrer %2$s et %1$s dans %3$s ?</string>
+    <string name="autofill_save_type_username">Compte</string>
+    <string name="autofill_save_yes">Enregistrer</string>
+    <string name="decline_remote_bugreport_action">Refuser</string>
+    <string name="emailTypeCustom">Personnaliser</string>
+    <string name="global_action_emergency">Appel d’urgence</string>
+    <string name="permgroupdesc_storage">Accédez aux photos, aux contenus multimédia et aux fichiers sur votre appareil</string>
+    <string name="permlab_install_shortcut">installer des raccourcis</string>
+    <string name="permlab_readSyncStats">lecture des statistiques de synchronisation</string>
+    <string name="phoneTypeFaxHome">Fax domicile</string>
+    <string name="relationTypeManager">Responsable</string>
+    <string name="share_remote_bugreport_action">Partager</string>
+    <string name="sms">Message</string>
+    <string name="ssl_certificate">Certificat de sécurité</string>
+    <string name="zen_mode_default_every_night_name">Veille</string>
+</resources>

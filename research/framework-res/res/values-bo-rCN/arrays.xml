@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>སྒེར་གྱི།</item>
+        <item>ལས་ཀ།</item>
+        <item>གཞན་དག</item>
+        <item>རང་བཟོ།</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>ཨེ་ཨའི་ཨེམ།</item>
+        <item>ཝིན་ཌོསའི་སྒེའུ་ཁུང་ཐད་བསྲིང་།</item>
+        <item>Yahooགློག་ཟམ་</item>
+        <item>སིཀེཔི།</item>
+        <item>QQགློག་ཟམ་</item>
+        <item>གྷུ་གལ་གླེང་མོལ།</item>
+        <item>ཨའི་སུ་ཁྱུའི།</item>
+        <item>ལྡབ་ལྡིབ་ཀྱི་གཏམ་བཤད།</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>ལས་ཀ།</item>
+        <item>གཞན།</item>
+        <item>རང་བཟོ།</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>གཙོ་ངོས།</item>
+        <item>ཁ་པར།</item>
+        <item>ཚད་གཞི།</item>
+        <item>ལས་ཡུལ་གཟུགས་འཕྲིན།</item>
+        <item>ཁྱིམ་གྱི་གཟུགས་འཕྲིན།</item>
+        <item>བརྒྱུད་འབོད་ཆས།</item>
+        <item>གཞན་དག</item>
+        <item>རང་བཟོ།</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>གཙོ་ངོས།</item>
+        <item>ལས་ཀ།</item>
+        <item>གཞན།</item>
+        <item>རང་བཟོ།</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>གཙོ་ངོས།</item>
+        <item>ལས་ཀ།</item>
+        <item>གཞན་དག</item>
+        <item>རང་བཟོ།</item>
+    </string-array>
+</resources>

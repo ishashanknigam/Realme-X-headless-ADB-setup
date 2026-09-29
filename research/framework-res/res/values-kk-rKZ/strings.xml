@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Бол-мау</string>
+    <string name="copy">Көшіру</string>
+    <string name="cut">Қию</string>
+    <string name="ok">OK</string>
+    <string name="paste">Қою</string>
+    <string name="selectAll">Барлығы</string>
+    <string name="allow">Рұқсат беру</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| жаңа жүйе дайындауда, күте тұрыңыз …</string>
+    <string name="android_upgrading_complete">ColorOS сәтті жаңартылды</string>
+    <string name="android_upgrading_starting_apps">ColorOS сәтті жаңартылды</string>
+    <string name="android_upgrading_title">ColorOS жаңарту …</string>
+    <string name="autofill_save_no">Кейін</string>
+    <string name="autofill_save_title_with_2types">%2$s және %1$s %3$s ішіне сақтау керек пе?</string>
+    <string name="autofill_save_type_username">Тіркелгі</string>
+    <string name="autofill_save_yes">Сақтау</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Енгізілген мәтінді бақылау</string>
+    <string name="deny">Қабылдамау</string>
+    <string name="lockscreen_carrier_default">Қызмет жоқ.</string>
+    <string name="notification_hidden_text">Хабар мазмұнын көру үшін енгізіңіз</string>
+    <string name="permgroupdesc_calendar">Күнтізбеге кіру</string>
+    <string name="permgroupdesc_camera">Фотосуреттер және бейнелер түсіру</string>
+    <string name="permgroupdesc_microphone">Аудио жазу</string>
+    <string name="permgroupdesc_phone">Телефон қоңырауларын жасау және басқару</string>
+    <string name="permgroupdesc_sensors">Өмір үшін маңызды белгілерге қатысты датчик деректеріне кіру</string>
+    <string name="permgroupdesc_sms">SMS хабарларын жіберу және көру</string>
+    <string name="permgroupdesc_storage">Құрылғыдағы фотосуреттерге, мультимедиа мазмұнына және файлдарға кіру</string>
+    <string name="permgrouplab_calendar">Күнтізбе</string>
+    <string name="permgrouplab_camera">Камера</string>
+    <string name="permgrouplab_contacts">Контактілер</string>
+    <string name="permgrouplab_location">Орны</string>
+    <string name="permgrouplab_microphone">Микрофон</string>
+    <string name="permgrouplab_phone">Телефон</string>
+    <string name="permgrouplab_sensors">Дене датчигі</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">Сақтау</string>
+    <string name="perms_new_perm_prefix">Жаңа:</string>
+    <string name="policylab_forceLock">Экранды құлыптау</string>
+    <string name="policylab_resetPassword">Құлыптау экранының кілт сөзін өзгерту</string>
+    <string name="policylab_wipeData">Барлық деректерді жою</string>
+    <string name="select_input_method">Пернетақтаны өзгерту</string>
+    <string name="share">Ортақтасу</string>
+    <string name="tethered_notification_message">Орнату үшін таңдау</string>
+    <string name="vpn_text_long">\"%s\" сеансына қосылды, желіні басқару үшін түртіңіз.</string>
+    <string name="zen_mode_default_every_night_name">Ұйқы</string>
+</resources>

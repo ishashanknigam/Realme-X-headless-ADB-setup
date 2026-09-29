@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Batal</string>
+    <string name="copy">Salin</string>
+    <string name="cut">Sunting</string>
+    <string name="ok">OK</string>
+    <string name="paste">Tampal</string>
+    <string name="selectAll">Pilih Semua</string>
+    <string name="allow">Benarkan</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| sedang menyediakan sistem baharu, sila tunggu …</string>
+    <string name="android_upgrading_complete">ColorOS berjaya dinaik taraf</string>
+    <string name="android_upgrading_starting_apps">ColorOS berjaya dinaik taraf</string>
+    <string name="android_upgrading_title">Menaik taraf ColorOS …</string>
+    <string name="autofill_save_no">Kemudian</string>
+    <string name="autofill_save_title_with_2types">Simpan %2$s dan %1$s kepada %3$s?</string>
+    <string name="autofill_save_type_username">Akaun</string>
+    <string name="autofill_save_yes">Simpan</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Perhatikan teks yang anda taip</string>
+    <string name="deny">Nafikan</string>
+    <string name="lockscreen_carrier_default">Tiada perkhidmatan.</string>
+    <string name="notification_hidden_text">Masuk untuk melihat kandungan mesej</string>
+    <string name="permgroupdesc_calendar">Akses kalendar anda</string>
+    <string name="permgroupdesc_camera">Ambil foto dan video</string>
+    <string name="permgroupdesc_microphone">Rakam Audio</string>
+    <string name="permgroupdesc_phone">Buat dan urus panggilan telefon</string>
+    <string name="permgroupdesc_sensors">Akses data pengesan yang berkaitan dengan isyarat penting anda</string>
+    <string name="permgroupdesc_sms">Hantar dan lihat mesej SMS</string>
+    <string name="permgroupdesc_storage">Akses foto, kandungan media dan fail pada peranti anda</string>
+    <string name="permgrouplab_calendar">Kalendar</string>
+    <string name="permgrouplab_camera">Kamera</string>
+    <string name="permgrouplab_contacts">Kenalan</string>
+    <string name="permgrouplab_location">Lokasi</string>
+    <string name="permgrouplab_microphone">Mikrofon</string>
+    <string name="permgrouplab_phone">Telefon</string>
+    <string name="permgrouplab_sensors">Pengesan tubuh</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">Storan</string>
+    <string name="perms_new_perm_prefix">Baru:</string>
+    <string name="policylab_forceLock">Kunci skrin</string>
+    <string name="policylab_resetPassword">Ubah kata laluan skrin kunci</string>
+    <string name="policylab_wipeData">Padamkan semua data</string>
+    <string name="select_input_method">Tukar papan kekunci</string>
+    <string name="share">Kongsi</string>
+    <string name="tethered_notification_message">Ketik untuk membuat tetapan</string>
+    <string name="vpn_text_long">Disambungkan ke \"%s\", ketik untuk menguruskan rangkaian.</string>
+    <string name="zen_mode_default_every_night_name">Tidur</string>
+</resources>

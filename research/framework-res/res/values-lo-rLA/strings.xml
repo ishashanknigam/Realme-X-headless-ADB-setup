@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">ຍົກເລີກ</string>
+    <string name="copy">ອັດສຳເນົາ</string>
+    <string name="cut">ຕັດ</string>
+    <string name="ok">ຕົກລົງ</string>
+    <string name="paste">ວາງໃສ່</string>
+    <string name="selectAll">ເລືອກທັງໝົດ</string>
+    <string name="allow">ອະນຸຍາດ</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| ກຳລັງກະກຽມລະບົບໃໝ່, ກະລຸນາລໍຖ້າ …</string>
+    <string name="android_upgrading_complete">ColorOS ອັບເກຣດສຳເລັດແລ້ວ</string>
+    <string name="android_upgrading_starting_apps">ColorOS ອັບເກຣດສຳເລັດແລ້ວ</string>
+    <string name="android_upgrading_title">ກໍາລັງອັບເກຣດ ColorOS …</string>
+    <string name="autofill_save_no">ພາຍຫຼັງ</string>
+    <string name="autofill_save_title_with_2types">ບັນທຶກ %2$s ແລະ %1$s ໃສ່ %3$s ບໍ?</string>
+    <string name="autofill_save_type_username">ບັນຊີ</string>
+    <string name="autofill_save_yes">ບັນທຶກ</string>
+    <string name="capability_title_canRequestFilterKeyEvents">ຕິດຕາມຂໍ້ຄວາມທີ່ປ້ອນເຂົ້າ</string>
+    <string name="deny">ປະຕິເສດ</string>
+    <string name="lockscreen_carrier_default">ບໍ່ມີການບໍລິການ.</string>
+    <string name="notification_hidden_text">ປ້ອນເພື່ອເບິ່ງເນື້ອໃນຂອງຂໍ້ຄວາມ</string>
+    <string name="permgroupdesc_calendar">ເຂົ້າເຖິງປະຕິທິນຂອງທ່ານ</string>
+    <string name="permgroupdesc_camera">ຖ່າຍຮູບ ແລະວິດີໂອ</string>
+    <string name="permgroupdesc_microphone">ບັນທຶກສຽງ</string>
+    <string name="permgroupdesc_phone">ໂທອອກ ແລະຈັດການສາຍໂທ</string>
+    <string name="permgroupdesc_sensors">ເຂົ້າເຖິງຂໍ້ມູນເຊັນເຊີທີ່ພົວພັນກັບການເຂົ້າໃຊ້ທີ່ສໍາຄັນຂອງທ່ານ</string>
+    <string name="permgroupdesc_sms">ສົ່ງ ແລະເບິ່ງຂໍ້ຄວາມ SMS</string>
+    <string name="permgroupdesc_storage">ເຂົ້າເຖິງຮູບຖ່າຍ, ເນື້ອໃນມີເດຍ, ແລະໄຟລເທິງອຸປະກອນຂອງທ່ານ</string>
+    <string name="permgrouplab_calendar">ປະຕິທິນ</string>
+    <string name="permgrouplab_camera">ກ້ອງຖ່າຍຮູບ</string>
+    <string name="permgrouplab_contacts">ລາຍຊື່</string>
+    <string name="permgrouplab_location">ຈຸດທີ່ຕັ້ງ</string>
+    <string name="permgrouplab_microphone">ໄມໂຄຣໂຟນ</string>
+    <string name="permgrouplab_phone">ໂທລະສັບ</string>
+    <string name="permgrouplab_sensors">ເຊັນເຊີຮ່າງກາຍ</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">ການຈັດເກັບຂໍ້ມູນ</string>
+    <string name="perms_new_perm_prefix">ໃໝ່:</string>
+    <string name="policylab_forceLock">ລັອກໜ້າຈໍ</string>
+    <string name="policylab_resetPassword">ປ່ຽນລະຫັດຜ່ານການລັອກໜ້າຈໍ</string>
+    <string name="policylab_wipeData">ລຶບທຸກຂໍ້ມູນ</string>
+    <string name="select_input_method">ປ່ຽນແປ້ນພິມ</string>
+    <string name="share">ແບ່ງປັນ</string>
+    <string name="tethered_notification_message">ແຕະເພື່ອຕັ້ງ</string>
+    <string name="vpn_text_long">ເຊື່ອມຕໍ່ກັບ \"%s\" ແລ້ວ, ແຕະເພື່ອຈັດການເຄືອຂ່າຍ.</string>
+    <string name="zen_mode_default_every_night_name">ນອນຫຼັບ</string>
+</resources>

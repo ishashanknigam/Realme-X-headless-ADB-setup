@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">منسوخ</string>
+    <string name="copy">نقل کریں</string>
+    <string name="cut">کاٹیں</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="paste">چسپاں کریں</string>
+    <string name="selectAll">تمام منتخب</string>
+    <string name="allow">اجازت دیں</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| نیا نظام تیار کر رہے ہیں، براہِ کرم انتظار فرمائیں …</string>
+    <string name="android_upgrading_complete">‏ColorOS کی درجہ افزونی میں کامیابی</string>
+    <string name="android_upgrading_starting_apps">ColorOS کی درجہ افزونی میں کامیابی</string>
+    <string name="android_upgrading_title">ColorOS کی درجہ افزونی کر رہے ہیں…</string>
+    <string name="autofill_save_no">بعد میں</string>
+    <string name="autofill_save_title_with_2types">‫‏%2$s‬ اور %1$s کو %3$s پر محفوظ کریں؟</string>
+    <string name="autofill_save_type_username">اکاؤنٹ</string>
+    <string name="autofill_save_yes">محفوظ کریں</string>
+    <string name="capability_title_canRequestFilterKeyEvents">ٹائپ کردہ متن کا مشاہدہ کرنے کی</string>
+    <string name="deny">انکار کریں</string>
+    <string name="lockscreen_carrier_default">کوئی خدمت نہیں.</string>
+    <string name="notification_hidden_text">پیغام کا مواد دیکھنے کے لیے داخل کریں</string>
+    <string name="permgroupdesc_calendar">آپ کے کیلنڈر تک رسائی کرے</string>
+    <string name="permgroupdesc_camera">تصاویر اور ویڈیوز بنائے</string>
+    <string name="permgroupdesc_microphone">آڈیو ریکارڈ کریں</string>
+    <string name="permgroupdesc_phone">فون کالیں کرے اور ان کا بندوبست کرے</string>
+    <string name="permgroupdesc_sensors">آپ کی علاماتِ حیات سے متعلق سینسر ڈیٹا تک رسائی کرے</string>
+    <string name="permgroupdesc_sms">SMS پیغامات بھیجے اور دیکھے</string>
+    <string name="permgroupdesc_storage">آپ کے آلہ پر تصاویر، میڈیا مشمول، اور فائلوں تک رسائی کرے</string>
+    <string name="permgrouplab_calendar">کیلنڈر</string>
+    <string name="permgrouplab_camera">کیمرہ</string>
+    <string name="permgrouplab_contacts">رابطے</string>
+    <string name="permgrouplab_location">محل وقوع</string>
+    <string name="permgrouplab_microphone">مائیکرو فون</string>
+    <string name="permgrouplab_phone">فون</string>
+    <string name="permgrouplab_sensors">جسمانی سینسر</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">ذخیرہ کاری</string>
+    <string name="perms_new_perm_prefix">نیا:</string>
+    <string name="policylab_forceLock">اسکرین کو مقفل کریں</string>
+    <string name="policylab_resetPassword">مقفل سکرین پاس کوڈ بدلیں</string>
+    <string name="policylab_wipeData">تمام ڈیٹا مٹائیں</string>
+    <string name="select_input_method">کی بورڈ تبدیل کریں</string>
+    <string name="share">حصہ داری</string>
+    <string name="tethered_notification_message">سیٹ اپ کے لیے ٹیپ کریں</string>
+    <string name="vpn_text_long">\"%s\" سے مربوط شدہ، نیٹ ورک کے بندوبست کے لیے ٹیپ کریں۔</string>
+    <string name="zen_mode_default_every_night_name">سلیپ</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cut">Aqta’</string>
+    <string name="paste">Paste</string>
+    <string name="selectAll">Agħżel Kollox</string>
+    <string name="kg_login_password_hint">Passcode</string>
+    <string name="lockscreen_glogin_password_hint">Passcode</string>
+    <string name="notification_hidden_text">Idħol biex tara l-kontenut tal-messaġġ</string>
+    <string name="permlab_accessNetworkState">Ara l-Konnessjoni man-Netwerk</string>
+    <string name="permlab_bluetooth">"Akkoppja ma' Tagħmir Bluetooth"</string>
+    <string name="permlab_broadcastSticky">Ibgħat Xandira Permanenti</string>
+    <string name="permlab_camera">Ħu Stampi u Vidjows</string>
+    <string name="permlab_readPhoneState">Aqra l-Istatus u l-Identità tal-Mowbajl</string>
+    <string name="permlab_vibrate">Ikkontrolla l-Vibrazzjoni</string>
+    <string name="zen_mode_default_every_night_name">Orqod</string>
+</resources>

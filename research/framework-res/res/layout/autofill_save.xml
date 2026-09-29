@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.color.internal.widget.ColorAutofillSaveLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/autofill_save" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="13.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36.0dp" android:paddingStart="24.0dp" android:paddingEnd="24.0dp">
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/autofill_save_icon" android:layout_width="24.0dp" android:layout_height="24.0dp" android:scaleType="fitStart" />
+                    <com.color.internal.widget.ColorAutofillSaveTitleTextView android:textSize="12.0sp" android:gravity="center" android:id="@id/autofill_save_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="34.69998dp" android:text="@string/autofill_save_title" android:lineSpacingMultiplier="1.2" android:paddingStart="8.0dp" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.android.server.autofill.ui.CustomScrollView android:id="@id/autofill_save_custom_subtitle" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dp" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.color.internal.widget.ColorAutofillSaveTextView android:textAppearance="?textAppearanceMedium" android:textSize="16.0sp" android:gravity="center" android:id="@id/autofill_save_yes" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="62.0dp" android:text="@string/autofill_save_yes" android:singleLine="false" />
+            <com.color.internal.widget.ColorAutofillSaveLineView android:layout_width="match_parent" android:layout_height="2.0px" android:layout_marginLeft="24.0dp" android:layout_marginRight="24.0dp" android:forceDarkAllowed="false" />
+            <com.color.internal.widget.ColorAutofillSaveTextView android:textAppearance="?textAppearanceMedium" android:textSize="16.0sp" android:gravity="center" android:id="@id/autofill_save_no" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dp" android:minHeight="52.0dp" android:text="@string/autofill_save_no" android:singleLine="false" />
+        </LinearLayout>
+    </LinearLayout>
+</com.color.internal.widget.ColorAutofillSaveLayout>

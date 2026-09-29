@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="last_num_days">
+        <item quantity="one">विगत %d दिन</item>
+        <item quantity="other">Past %d दिन</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="one">1 परिणाम</item>
+        <item quantity="other">परिणाम संख्या %1$d (%2$d मध्ये)</item>
+    </plurals>
+    <plurals name="pinpuk_attempts">
+        <item quantity="one">तपाईंसँग अझै %d प्रयास बाँकी छ। थप एउटा प्रयास विफल भएको खण्डमा, यो SIM लक हुनेछ।</item>
+        <item quantity="other">तपाईंसँग अझै %d प्रयास बाँकी छ। थप एउटा प्रयास विफल भएको खण्डमा, यो SIM लक हुनेछ।</item>
+    </plurals>
+    <plurals name="restr_pin_countdown">
+        <item quantity="one">1 सेकेण्डमा फेरि प्रयास गर्नुहोस्</item>
+        <item quantity="other">%d सेकेण्डमा फेरि प्रयास गर्नुहोस्</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">%1$d वस्तु चयन गरियो</item>
+        <item quantity="other">%1$d वस्तुहरू चयन गरियो</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="one">एउटा Wi-Fi नेटवर्क उपलब्ध छ</item>
+        <item quantity="other">Wi-Fi नेटवर्कहरू उपलब्ध छन्</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="one">एउटा खुला Wi-Fi नेटवर्क उपलब्ध छ</item>
+        <item quantity="other">खुला Wi-Fi नेटवर्कहरू उपलब्ध छन्</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours">
+        <item quantity="one">1 घण्टा</item>
+        <item quantity="other">%d घण्टा</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_short">
+        <item quantity="one">1 घण्टा</item>
+        <item quantity="other">%d घण्टा</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_summary_short">
+        <item quantity="one">1 घण्टा (%2$s सम्म)</item>
+        <item quantity="other">%1$d घण्टा (%2$s सम्म)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes">
+        <item quantity="one">1 मिनेट</item>
+        <item quantity="other">%d मिनेट</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_short">
+        <item quantity="one">1 मिनेट</item>
+        <item quantity="other">%d मिनेट</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary">
+        <item quantity="one">1 मिनेट (%2$s सम्म)</item>
+        <item quantity="other">%1$d मिनेट (%2$s सम्म)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary_short">
+        <item quantity="one">1 मिनेट (%2$s सम्म)</item>
+        <item quantity="other">%1$d मिनेट (%2$s सम्म)</item>
+    </plurals>
+</resources>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="last_num_days">
+        <item quantity="one">గత %d రోజు</item>
+        <item quantity="other">గత %d రోజులు</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="one">1 ఫలితం</item>
+        <item quantity="other">ఫలిత నెంబరు %1$d (%2$dలో)</item>
+    </plurals>
+    <plurals name="pinpuk_attempts">
+        <item quantity="one">మీకు ఇంకా %d ప్రయత్నం మిగిలి ఉంది. మరో ఒక విఫల ప్రయత్నం తరువాత సిమ్ బ్లాక్ చేయబడుతుంది.</item>
+        <item quantity="other">మీకు ఇంకా %d ప్రయత్నాలు మిగిలి ఉన్నాయి. మరో ఒక ప్రయత్నం విఫలమైన తరువాత సిమ్ బ్లాక్ చేయబడుతుంది.</item>
+    </plurals>
+    <plurals name="restr_pin_countdown">
+        <item quantity="one">1 సెకనులో తిరిగి ప్రయత్నించండి</item>
+        <item quantity="other">%d సెకండ్లలో తిరిగి ప్రయత్నించండి.</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">%1$d ఐటమ్ ఎంచుకోబడింది</item>
+        <item quantity="other">%1$d ఐటమ్‌లు ఎంచుకోబడ్డాయి</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="one">ఒక Wi-Fi నెట్‌వర్క్ లభ్యం అవుతోంది</item>
+        <item quantity="other">Wi-Fi నెట్‌వర్క్‌లు లభ్యం</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="one">ఒక ఓపెన్ Wi-Fi నెట్‌వర్క్ లభ్యం అవుతోంది</item>
+        <item quantity="other">ఓపెన్ Wi-Fi నెట్‌వర్క్‌లు లభ్యం</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours">
+        <item quantity="one">1 గం</item>
+        <item quantity="other">%d గంటలు</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_short">
+        <item quantity="one">1 గం</item>
+        <item quantity="other">%d గంటలు</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_summary_short">
+        <item quantity="one">1 గంట (%2$s వరకు)</item>
+        <item quantity="other">%1$d గంటలు(%2$s వరకు)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes">
+        <item quantity="one">1 నిమి</item>
+        <item quantity="other">%d నిమిషాలు</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_short">
+        <item quantity="one">1 నిమి</item>
+        <item quantity="other">%d నిమిషాలు</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary">
+        <item quantity="one">1 నిమిషం (%2$s వరకు)</item>
+        <item quantity="other">%1$d నిమిషాలు (%2$s వరకు)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary_short">
+        <item quantity="one">1 నిమిషం (%2$s వరకు)</item>
+        <item quantity="other">%1$d నిమిషాలు (%2$s వరకు)</item>
+    </plurals>
+</resources>

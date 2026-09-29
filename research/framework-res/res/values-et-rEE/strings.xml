@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Tühista</string>
+    <string name="cut">Lõika</string>
+    <string name="paste">Kleebi</string>
+    <string name="selectAll">Vali kõik</string>
+    <string name="add_account_label">Lisa konto</string>
+    <string name="autofill_save_no">Hiljem</string>
+    <string name="autofill_save_title_with_2types">Salvestate %2$s ja %1$s kohta %3$s?</string>
+    <string name="autofill_save_type_username">Konto</string>
+    <string name="autofill_save_yes">Salvesta</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Sisestatud teksti jälgimine</string>
+    <string name="decline_remote_bugreport_action">Keeldu</string>
+    <string name="elapsed_time_short_format_mm_ss">%1$02d:%2$02d</string>
+    <string name="emailTypeHome">Kodu</string>
+    <string name="emailTypeWork">Töökoht</string>
+    <string name="global_action_emergency">Hädaabikõne</string>
+    <string name="kg_login_password_hint">Pääsukood</string>
+    <string name="lockscreen_carrier_default">Teenus puudub</string>
+    <string name="lockscreen_glogin_password_hint">Pääsukood</string>
+    <string name="notification_hidden_text">Sisenege sõnumi sisu vaatamiseks</string>
+    <string name="permgroupdesc_calendar">juurdepääs kalendrile</string>
+    <string name="permgroupdesc_storage">Avage seadmes fotosid, meediasisu ja faile</string>
+    <string name="policydesc_forceLock">Määratakse, kuidas ja millal ekraan lukustab.</string>
+    <string name="postalTypeHome">Koduaadr.</string>
+    <string name="share_remote_bugreport_action">Jaga</string>
+    <string name="sms">Sõnum</string>
+    <string name="ssl_certificate">Turbesert</string>
+    <string name="zen_mode_default_every_night_name">Unerežiim</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cut">Ebaki</string>
+    <string name="paste">Itsatsi</string>
+    <string name="search_go">Bilatu</string>
+    <string name="selectAll">Hautatu guztiak</string>
+    <string name="add_account_label">Gehitu kontua</string>
+    <string name="autofill_save_no">Geroago</string>
+    <string name="autofill_save_title_with_2types">%2$s eta %1$s hemen gorde: %3$s?</string>
+    <string name="autofill_save_type_username">Kontua</string>
+    <string name="autofill_save_yes">Gorde</string>
+    <string name="decline_remote_bugreport_action">Baztertu</string>
+    <string name="emailTypeCustom">Pertsonalizatua</string>
+    <string name="global_action_emergency">Larrialdietako deia</string>
+    <string name="imProtocolCustom">Pertsonalizatua</string>
+    <string name="ime_action_search">Bilatu</string>
+    <string name="kg_login_password_hint">Ezkutuko kodea</string>
+    <string name="lockscreen_glogin_password_hint">Ezkutuko kodea</string>
+    <string name="notification_hidden_text">Sartu mezuaren edukia ikusteko</string>
+    <string name="orgTypeCustom">Pertsonalizatua</string>
+    <string name="permgroupdesc_storage">Atzitu zure gailuko argazkiak, multimedia-edukia eta fitxategiak</string>
+    <string name="phoneTypeFaxWork">Laneko faxa</string>
+    <string name="postalTypeCustom">Pertsonalizatua</string>
+    <string name="relationTypeAssistant">Laguntzailea</string>
+    <string name="relationTypeBrother">Anaia/Neba</string>
+    <string name="relationTypeChild">Semea/Alaba</string>
+    <string name="relationTypeManager">Kudeatzailea</string>
+    <string name="relationTypeSister">Arreba/Ahizpa</string>
+    <string name="relationTypeSpouse">Ezkontidea</string>
+    <string name="searchview_description_search">Bilatu</string>
+    <string name="share_remote_bugreport_action">Partekatu</string>
+    <string name="sms">Mezua</string>
+    <string name="ssl_certificate">Segurtasun-ziurtagiria</string>
+    <string name="zen_mode_default_every_night_name">Lo hartutako ordua</string>
+</resources>

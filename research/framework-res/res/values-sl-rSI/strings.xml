@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cut">Izreži</string>
+    <string name="paste">Prilepi</string>
+    <string name="selectAll">Izberi vse</string>
+    <string name="accept">Sprejmi</string>
+    <string name="add_account_label">Dodaj račun</string>
+    <string name="autofill_save_no">Pozneje</string>
+    <string name="autofill_save_title_with_2types">Ali želite shraniti %2$s in %1$s v %3$s?</string>
+    <string name="autofill_save_type_username">Račun</string>
+    <string name="autofill_save_yes">Shrani</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Nadzirati vneseno besedilo</string>
+    <string name="capability_title_canRequestTouchExploration">Vklopiti raziskovanje z dotikom</string>
+    <string name="capability_title_canRetrieveWindowContent">Poiskati vsebino okna</string>
+    <string name="common_name">Pogosto ime:</string>
+    <string name="date_and_time" formatted="false">%H:%M:%S, %-e. %b %Y</string>
+    <string name="date_time">%2$s, %1$s</string>
+    <string name="decline_remote_bugreport_action">Zavrni</string>
+    <string name="elapsed_time_short_format_mm_ss">%1$02d:%2$02d</string>
+    <string name="global_action_emergency">Klic v sili</string>
+    <string name="kg_login_password_hint">Številska koda</string>
+    <string name="lockscreen_glogin_password_hint">Številska koda</string>
+    <string name="month_day_year" formatted="false">%d. %B %Y</string>
+    <string name="notification_hidden_text">Vnesite, da prikažete vsebino sporočila</string>
+    <string name="perm_costs_money">to je lahko plačljivo</string>
+    <string name="permgroupdesc_storage">Na svoji napravi dostopajte so fotografij, predstavnostne vsebine in datotek.</string>
+    <string name="phoneTypeFaxHome">Dom. Faks</string>
+    <string name="phoneTypeFaxWork">Služb. faks</string>
+    <string name="phoneTypeMobile">Mob.</string>
+    <string name="relationTypeSpouse">Zakonec</string>
+    <string name="share">Skupna raba</string>
+    <string name="share_remote_bugreport_action">Daj v skupno rabo</string>
+    <string name="sms">Sporočilo</string>
+    <string name="ssl_certificate">Varnostno potrdilo</string>
+    <string name="time_of_day" formatted="false">%H:%M:%S</string>
+    <string name="zen_mode_default_every_night_name">Spanje</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>ပုဂၢိဳလ္ေရး</item>
+        <item>ကိုယ္ပိုင္</item>
+        <item>အျခား</item>
+        <item>ျပဳျပင္မည္</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>အလုပ္</item>
+        <item>အျခား</item>
+        <item>စိတ္ႀကိဳက္</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>အိမ္</item>
+        <item>ဖုန္း</item>
+        <item>ယူနစ္</item>
+        <item>အလုပ္ဖက္(စ္)</item>
+        <item>အိမ္ဖက္(စ္)</item>
+        <item>ေပဂ်ာ</item>
+        <item>အျခား</item>
+        <item>ျပဳျပင္မည္</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>အိမ္</item>
+        <item>အလုပ္</item>
+        <item>အျခား</item>
+        <item>စိတ္ႀကိဳက္</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>ပင္မ</item>
+        <item>အလုပ္</item>
+        <item>အျခား</item>
+        <item>စိတ္ႀကိဳက္</item>
+    </string-array>
+</resources>

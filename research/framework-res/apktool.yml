@@ -1,0 +1,14 @@
+version: 3.0.3
+apkFileName: framework-res.apk
+sdkInfo:
+  minSdkVersion: 29
+  targetSdkVersion: 29
+versionInfo:
+  versionCode: 29
+  versionName: 10
+resourcesInfo:
+  packageId: 1
+doNotCompress:
+- arsc
+- ogg
+- png

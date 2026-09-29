@@ -1,370 +1,67 @@
 # Realme X RMX1901 — Headless ADB Recovery
 
-A complete backup and recovery procedure for running a **Realme X (RMX1901)** as a headless Android device when the display/touchscreen is not usable.
+Recovery notes for using a **Realme X RMX1901** with a dead display/touchscreen as a headless Android ADB device.
 
-The goal is to boot normal Android and automatically expose:
+## Known-good configuration
 
-- MTP
-- ADB
-- Remote control through `adb shell`
-- Remote screen control through `scrcpy`
+Target firmware:
 
----
+- Device: Realme X RMX1901
+- Android: 10
+- ColorOS: 7.2
+- Build: `RMX1901_11_C.11`
+- Bootloader: unlocked
+- TWRP: `3.6.2_12.1_nicky_RC3`
+- Magisk: 24.2
 
-# 1. Device Information
-
-| Item | Value |
-|---|---|
-| Device | Realme X |
-| Model | RMX1901 |
-| SoC | Qualcomm SDM710 / Snapdragon 710 |
-| Android | 10 |
-| ColorOS | 7.2 |
-| Build | RMX1901_11_C.11 |
-| Bootloader | Unlocked |
-| Verified Boot | `orange` |
-| Magisk | 24.2 |
-| Purpose | Headless ADB / scrcpy |
-
-The display and touchscreen are not usable.
-
-The phone is controlled from a Linux PC through USB ADB.
-
----
-
-# 2. Verified Working State
-
-The following state has been successfully tested after a normal Android reboot.
-
-## ADB
+The tested working USB state is:
 
 ```text
-adb devices
-
-8546e62c    device
-```
-
-## Root
-
-```text
-adb shell su -c id
-```
-
-Expected:
-
-```text
-uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
-```
-
-## Current runtime USB configuration
-
-Verified after normal reboot:
-
-```text
+persist.sys.allcommode=true
 persist.sys.usb.config=mtp,adb
-persist.vendor.usb.config=<empty>
 sys.usb.config=mtp,adb
+sys.usb.state=mtp,adb
 adb_enabled=1
 ```
 
-ADB works even though the phone has no usable touchscreen.
+The phone was also tested across a physical USB disconnect/reconnect and remained visible to ADB as:
 
-USB device:
+```text
+8546e62c    device
+```
+
+The Linux USB device was:
 
 ```text
 22d9:2765 OPPO Electronics Corp. Oppo N1
 ```
 
----
+## Why `persist.sys.allcommode=true` matters
 
-# 3. Repository Structure
+This ROM's decompiled `UsbDeviceManager` uses a boot-mode-specific persistent USB function when `ro.bootmode=reboot` unless `persist.sys.allcommode=true`. With `allcommode=true`, the code uses `persist.sys.usb.config` instead of `persist.sys.usb.reboot.func`.
 
-```text
-realme-x-headless-adb/
-│
-├── backup/
-│   ├── adb_keys
-│   ├── persistent_properties
-│   └── settings_global.xml
-│
-├── info/
-│   ├── device-state.txt
-│   └── working-config.txt
-│
-├── scripts/
-│   ├── patch_usb_vendor.py
-│   └── usb-adb.sh
-│
-├── README.md
-└── SHA256SUMS
-```
+The OPPO helper also checks `persist.sys.allcommode` in its ADB-disable decision. On the tested phone, changing `allcommode` to `true` prevented the late boot transition to MIDI and allowed `mtp,adb` to remain active.
 
----
+## Important safety rules
 
-# 4. What Each Backup File Does
+- Do not wipe `/data` unless you intentionally want a factory reset.
+- Keep an untouched copy of the original persistent-properties file.
+- Never upload `~/.android/adbkey` (the private key) to GitHub.
+- `backup/adb_keys` is the public/authorized key file used by the phone and is safe only for a private recovery repository.
+- Do not flash the empty standalone `odm` partition just because `/dev/block/sda12` appears unused.
+- EDL/Sahara worked on this device, but the tested public Firehose loader failed signature verification, so EDL is not part of this recovery procedure.
 
-## `backup/persistent_properties`
+## 1. Enter TWRP
 
-Backup of:
+Hardware sequence already verified on this device:
 
-```text
-/data/property/persistent_properties
-```
+1. `Vol Down + Power` → fastboot.
+2. In fastboot, press `Vol Down` once.
+3. Press `Power` → TWRP.
 
-This is Android's persistent-property database.
+Confirm TWRP ADB:
 
-It contains the USB-related persistent configuration used to enable ADB.
-
-The saved backup contains:
-
-```text
-persist.sys.usb.config=mtp,adb
-persist.vendor.usb.config=mtp,adb
-```
-
-Important:
-
-The saved file is a **snapshot**. It is not necessarily identical to the values returned by `getprop` while Android is currently running.
-
----
-
-## `backup/settings_global.xml`
-
-Backup of:
-
-```text
-/data/system/users/0/settings_global.xml
-```
-
-The important setting is:
-
-```xml
-name="adb_enabled" value="1"
-```
-
-This tells Android that ADB is enabled.
-
----
-
-## `backup/adb_keys`
-
-Backup of:
-
-```text
-/data/misc/adb/adb_keys
-```
-
-This contains the **ADB host public key** authorized by the phone.
-
-This allows the PC to connect without requiring authorization through the broken touchscreen.
-
-### Security warning
-
-Never put the PC's private ADB key in this repository.
-
-Do NOT upload:
-
-```text
-~/.android/adbkey
-```
-
-Only the phone-side `adb_keys` public-key file is backed up here.
-
----
-
-# 5. Important: Magisk Service Script
-
-The repository also contains:
-
-```text
-scripts/usb-adb.sh
-```
-
-which is installed on the phone as:
-
-```text
-/data/adb/service.d/usb-adb.sh
-```
-
-Current script:
-
-```sh
-#!/system/bin/sh
-
-sleep 5
-
-resetprop persist.sys.usb.config mtp,adb
-resetprop persist.vendor.usb.config mtp,adb
-
-setprop sys.usb.config mtp,adb
-
-settings put global adb_enabled 1
-```
-
-## Current status
-
-Magisk 24.2 successfully discovers the script during boot:
-
-```text
-* late_start service mode running
-* Running service.d scripts
-service.d: exec [usb-adb.sh]
-```
-
-However, the same boot log reported:
-
-```text
-execve /sbin/.magisk/busybox/busybox failed with 2: No such file or directory
-```
-
-Therefore:
-
-**Do not rely on `usb-adb.sh` as the primary recovery mechanism.**
-
-The actual ADB configuration has independently been verified to survive a normal reboot.
-
-The script is retained in this repository as an additional recovery/experimental component.
-
----
-
-# 6. Before Doing Anything
-
-Do NOT factory-reset or format `/data` unless necessary.
-
-If Android is currently working:
-
-```bash
-adb devices
-```
-
-should show:
-
-```text
-8546e62c    device
-```
-
-Check:
-
-```bash
-adb shell '
-echo "persist.sys.usb.config=$(getprop persist.sys.usb.config)"
-echo "persist.vendor.usb.config=$(getprop persist.vendor.usb.config)"
-echo "sys.usb.config=$(getprop sys.usb.config)"
-echo "adb_enabled=$(settings get global adb_enabled)"
-'
-```
-
-Expected:
-
-```text
-persist.sys.usb.config=mtp,adb
-persist.vendor.usb.config=
-sys.usb.config=mtp,adb
-adb_enabled=1
-```
-
-If this works, no recovery is required.
-
----
-
-# 7. If ADB Is Still Working but You Only Want a Backup
-
-Pull the current working files using root:
-
-```bash
-adb exec-out su -c 'cat /data/property/persistent_properties' \
-    > backup/persistent_properties
-
-adb exec-out su -c 'cat /data/system/users/0/settings_global.xml' \
-    > backup/settings_global.xml
-
-adb exec-out su -c 'cat /data/misc/adb/adb_keys' \
-    > backup/adb_keys
-
-adb exec-out su -c 'cat /data/adb/service.d/usb-adb.sh' \
-    > scripts/usb-adb.sh
-```
-
-Check:
-
-```bash
-ls -lh backup/ scripts/
-```
-
----
-
-# 8. Recovery After `/data` Wipe
-
-A factory reset or TWRP data format removes:
-
-```text
-/data/property/persistent_properties
-/data/system/users/0/settings_global.xml
-/data/misc/adb/adb_keys
-/data/adb/
-```
-
-Therefore normal Android may boot with:
-
-```text
-persist.sys.usb.config=midi
-adb_enabled=0
-```
-
-and ADB will no longer be available.
-
-The recovery method is:
-
-```text
-TWRP
-  ↓
-restore USB configuration
-  ↓
-restore adb_enabled
-  ↓
-restore ADB public key
-  ↓
-reboot Android
-  ↓
-ADB available again
-```
-
----
-
-# 9. Enter TWRP
-
-Because the display is not usable, use the known working button sequence.
-
-## Enter fastboot
-
-Power off the phone.
-
-Use:
-
-```text
-Volume Down + Power
-```
-
-The phone should enter fastboot.
-
-## From fastboot to TWRP
-
-Use:
-
-```text
-Press Volume Down once
-then Power
-```
-
-TWRP should boot.
-
----
-
-# 10. Verify TWRP ADB
-
-From the PC:
-
-```bash
+```fish
 adb devices
 ```
 
@@ -374,326 +71,105 @@ Expected:
 8546e62c    recovery
 ```
 
-Check root:
+Confirm root:
 
-```bash
+```fish
 adb shell id
 ```
 
-Expected:
+Expected to include:
 
 ```text
 uid=0(root)
 ```
 
-If `/data` is not mounted, mount it from TWRP before continuing.
+Make sure `/data` is mounted in TWRP.
 
----
+## 2. Prepare a fresh recovery workspace
 
-# 11. Backup the Fresh `/data` Files Before Modifying Them
+On the Arch/Kitty host:
 
-This is strongly recommended.
-
-Create a recovery working directory:
-
-```bash
-mkdir -p ~/Documents/realme-x-headless-adb/recovery-work
-cd ~/Documents/realme-x-headless-adb/recovery-work
+```fish
+cd ~/Documents/realme-x-headless-adb
+mkdir -p recovery-work
 ```
 
-Pull the current persistent-property file:
+Pull fresh copies from the phone **before modifying them**:
 
-```bash
+```fish
 adb pull /data/property/persistent_properties \
-    persistent_properties-current.bin
+    recovery-work/persistent_properties-current.bin
 ```
 
-Pull the current settings file:
-
-```bash
+```fish
 adb pull /data/system/users/0/settings_global.xml \
-    settings_global-current.xml
+    recovery-work/settings_global-current.xml
 ```
 
-If these files are fresh after a factory reset, keep them as untouched originals.
+Keep these fresh files separate from the repository's original backups.
 
----
+## 3. Patch the persistent USB properties
 
-# 12. Restore / Patch USB Persistent Properties
+Copy the fresh property store to a working file:
 
-## Recommended method
+```fish
+cp recovery-work/persistent_properties-current.bin \
+    recovery-work/persistent_properties-working.bin
+```
 
-Use the included:
+Run the canonical patcher:
+
+```fish
+python3 scripts/patch_headless.py \
+    recovery-work/persistent_properties-working.bin \
+    recovery-work/persistent_properties-headless.bin
+```
+
+The patcher sets:
 
 ```text
-scripts/patch_usb_vendor.py
+persist.sys.usb.config=mtp,adb
+persist.vendor.usb.config=mtp,adb
+persist.sys.allcommode=true
 ```
 
-The script was created specifically for the Realme X persistent-property file.
+It updates existing entries and creates `persist.vendor.usb.config` if the fresh store does not already contain it.
 
-Copy the current file to the filename expected by the script:
+Verify the binary contains the target values:
 
-```bash
-cp persistent_properties-current.bin \
-   persistent_properties-current.bin
+```fish
+grep -aobE \
+    'persist.sys.allcommode|persist.sys.usb.config|persist.vendor.usb.config|mtp,adb|midi' \
+    recovery-work/persistent_properties-headless.bin
 ```
 
-Run:
+Do not assume `strings` alone proves a name/value pair; use the patcher output and the binary as a whole.
 
-```bash
-python3 ../scripts/patch_usb_vendor.py
+## 4. Install the patched persistent-properties file
+
+Push it:
+
+```fish
+adb push recovery-work/persistent_properties-headless.bin \
+    /data/local/tmp/persistent_properties.new
 ```
 
-The patched output should be:
+Because TWRP ADB is root, no `su` command is needed:
 
-```text
-persistent_properties-vendor-adb.bin
+```fish
+adb shell 'cat /data/local/tmp/persistent_properties.new > /data/property/persistent_properties'
 ```
 
-Verify the resulting file:
+Restore the expected metadata explicitly:
 
-```bash
-strings -n 1 persistent_properties-vendor-adb.bin |
-grep -E -A2 -B2 'persist\.(vendor|sys)\.usb\.config'
-```
-
-The patched file should contain:
-
-```text
-persist.sys.usb.config
-mtp,adb
-```
-
-and:
-
-```text
-persist.vendor.usb.config
-mtp,adb
-```
-
-Do not modify the original backup.
-
----
-
-# 13. Install the Patched Persistent Properties
-
-Push the patched file to temporary storage:
-
-```bash
-adb push persistent_properties-vendor-adb.bin \
-    /data/local/tmp/persistent_properties
-```
-
-Copy it as root:
-
-```bash
-adb shell "
-su -c '
-cp /data/local/tmp/persistent_properties \
-   /data/property/persistent_properties
-
-chown root:root \
-   /data/property/persistent_properties
-
-chmod 600 \
-   /data/property/persistent_properties
-
-chcon u:object_r:property_data_file:s0 \
-   /data/property/persistent_properties
-
-rm -f /data/local/tmp/persistent_properties
-'
-"
-```
-
----
-
-# 14. Enable `adb_enabled`
-
-Do not blindly replace the entire `settings_global.xml` after a factory reset if a fresh file is available.
-
-Instead:
-
-1. Pull the fresh file.
-2. Make a backup.
-3. Change only `adb_enabled` from `0` to `1`.
-4. Push it back.
-
-Create a backup:
-
-```bash
-cp settings_global-current.xml \
-   settings_global-before-adb.patch.xml
-```
-
-Edit:
-
-```bash
-nano settings_global-current.xml
-```
-
-Find:
-
-```xml
-name="adb_enabled" value="0"
-```
-
-Change only:
-
-```xml
-name="adb_enabled" value="1"
+```fish
+adb shell 'chown root:root /data/property/persistent_properties; chmod 600 /data/property/persistent_properties; chcon u:object_r:property_data_file:s0 /data/property/persistent_properties'
 ```
 
 Verify:
 
-```bash
-grep -n 'name="adb_enabled"' \
-    settings_global-current.xml
-```
-
-Expected:
-
-```xml
-name="adb_enabled" value="1"
-```
-
-Push:
-
-```bash
-adb push settings_global-current.xml \
-    /data/local/tmp/settings_global.xml
-```
-
-Install:
-
-```bash
-adb shell "
-su -c '
-cp /data/local/tmp/settings_global.xml \
-   /data/system/users/0/settings_global.xml
-
-chown system:system \
-   /data/system/users/0/settings_global.xml
-
-chmod 600 \
-   /data/system/users/0/settings_global.xml
-
-chcon u:object_r:system_data_file:s0 \
-   /data/system/users/0/settings_global.xml
-
-rm -f /data/local/tmp/settings_global.xml
-'
-"
-```
-
----
-
-# 15. Restore the Authorized ADB Public Key
-
-Create the ADB directory if necessary:
-
-```bash
-adb shell "
-su -c '
-mkdir -p /data/misc/adb
-
-chown system:shell /data/misc/adb
-chmod 750 /data/misc/adb
-'
-"
-```
-
-Push the backed-up public key:
-
-```bash
-adb push ../backup/adb_keys \
-    /data/local/tmp/adb_keys
-```
-
-Install it:
-
-```bash
-adb shell "
-su -c '
-cp /data/local/tmp/adb_keys \
-   /data/misc/adb/adb_keys
-
-chown system:shell \
-   /data/misc/adb/adb_keys
-
-chmod 640 \
-   /data/misc/adb/adb_keys
-
-chcon u:object_r:adb_keys_file:s0 \
-   /data/misc/adb/adb_keys
-
-rm -f /data/local/tmp/adb_keys
-'
-"
-```
-
----
-
-# 16. Verify Everything Before Reboot
-
-## Persistent USB properties
-
-```bash
-adb shell '
-strings -n 1 /data/property/persistent_properties |
-grep -E -A2 -B2 "persist\.(vendor|sys)\.usb\.config"
-'
-```
-
-Look for:
-
-```text
-persist.sys.usb.config
-mtp,adb
-```
-
-and:
-
-```text
-persist.vendor.usb.config
-mtp,adb
-```
-
-## ADB setting
-
-```bash
-adb shell '
-grep -n "name=\"adb_enabled\"" \
-/data/system/users/0/settings_global.xml
-'
-```
-
-Expected:
-
-```text
-name="adb_enabled" value="1"
-```
-
-## ADB public key
-
-```bash
-adb shell '
-ls -lZ /data/misc/adb/adb_keys
-'
-```
-
-Expected:
-
-```text
--rw-r----- 1 system shell ... u:object_r:adb_keys_file:s0
-```
-
-## Persistent-property permissions
-
-```bash
-adb shell '
-ls -lZ /data/property/persistent_properties
-'
+```fish
+adb shell 'ls -lZ /data/property/persistent_properties'
 ```
 
 Expected:
@@ -702,39 +178,103 @@ Expected:
 -rw------- 1 root root ... u:object_r:property_data_file:s0
 ```
 
-## Settings permissions
+## 5. Enable ADB in settings
 
-```bash
-adb shell '
-ls -lZ /data/system/users/0/settings_global.xml
-'
+Make a safety copy:
+
+```fish
+cp recovery-work/settings_global-current.xml \
+    recovery-work/settings_global-before-adb.patch.xml
 ```
 
-Expected:
+Edit:
 
-```text
--rw------- 1 system system ... u:object_r:system_data_file:s0
+```fish
+nano recovery-work/settings_global-current.xml
 ```
 
----
+Change **only** the `adb_enabled` value:
 
-# 17. Reboot Into Android
+```xml
+name="adb_enabled" value="0"
+```
 
-Only after all files have been verified:
+to:
 
-```bash
+```xml
+name="adb_enabled" value="1"
+```
+
+Verify:
+
+```fish
+grep -n 'name="adb_enabled"' recovery-work/settings_global-current.xml
+```
+
+Push:
+
+```fish
+adb push recovery-work/settings_global-current.xml \
+    /data/local/tmp/settings_global.xml
+```
+
+Install and restore metadata:
+
+```fish
+adb shell 'cat /data/local/tmp/settings_global.xml > /data/system/users/0/settings_global.xml; chown system:system /data/system/users/0/settings_global.xml; chmod 600 /data/system/users/0/settings_global.xml; chcon u:object_r:system_data_file:s0 /data/system/users/0/settings_global.xml'
+```
+
+## 6. Restore the authorized ADB public key
+
+Create the directory if needed:
+
+```fish
+adb shell 'mkdir -p /data/misc/adb; chown system:shell /data/misc/adb; chmod 750 /data/misc/adb'
+```
+
+Push the saved public key:
+
+```fish
+adb push backup/adb_keys /data/local/tmp/adb_keys
+```
+
+Install it:
+
+```fish
+adb shell 'cat /data/local/tmp/adb_keys > /data/misc/adb/adb_keys; chown system:shell /data/misc/adb/adb_keys; chmod 640 /data/misc/adb/adb_keys; chcon u:object_r:adb_keys_file:s0 /data/misc/adb/adb_keys; rm -f /data/local/tmp/adb_keys'
+```
+
+Verify:
+
+```fish
+adb shell 'ls -lZ /data/misc/adb/adb_keys'
+```
+
+## 7. Verify before rebooting
+
+Check the property file metadata:
+
+```fish
+adb shell 'ls -lZ /data/property/persistent_properties'
+```
+
+Check the persistent values currently visible in the TWRP property service:
+
+```fish
+adb shell 'getprop persist.sys.allcommode; getprop persist.sys.usb.config; getprop persist.vendor.usb.config'
+```
+
+The recovery environment may report different temporary `sys.usb.*` values because TWRP itself is running in `recovery` mode. The persistent file is the important part for the normal `reboot` test.
+
+## 8. Reboot and verify normal Android
+
+```fish
 adb reboot
 ```
 
-Wait for Android to completely boot.
+Wait for Android to boot, then:
 
----
-
-# 18. Verify ADB After Reboot
-
-Run:
-
-```bash
+```fish
 adb devices
 ```
 
@@ -745,473 +285,204 @@ List of devices attached
 8546e62c    device
 ```
 
-Then:
+Verify the key runtime values:
 
-```bash
-adb shell '
-echo "persist.sys.usb.config=$(getprop persist.sys.usb.config)"
-echo "persist.vendor.usb.config=$(getprop persist.vendor.usb.config)"
-echo "sys.usb.config=$(getprop sys.usb.config)"
-echo "adb_enabled=$(settings get global adb_enabled)"
-'
+```fish
+adb shell 'echo "bootmode=$(getprop ro.bootmode)"; echo "allcommode=$(getprop persist.sys.allcommode)"; echo "persist.usb=$(getprop persist.sys.usb.config)"; echo "vendor.usb=$(getprop persist.vendor.usb.config)"; echo "sys.usb.config=$(getprop sys.usb.config)"; echo "sys.usb.state=$(getprop sys.usb.state)"; echo "adb=$(settings get global adb_enabled)"'
 ```
 
-Expected:
+Expected working state includes:
 
 ```text
-persist.sys.usb.config=mtp,adb
-persist.vendor.usb.config=
+bootmode=reboot
+allcommode=true
+persist.usb=mtp,adb
 sys.usb.config=mtp,adb
-adb_enabled=1
+sys.usb.state=mtp,adb
+adb=1
 ```
 
----
+Check the Linux USB identity from the host:
 
-# 19. Verify Root
-
-```bash
-adb shell su -c id
+```fish
+lsusb | grep -iE '22d9|18d1|2765|4ee8'
 ```
 
-Expected:
+Expected working device:
 
 ```text
-uid=0(root) gid=0(root) groups=0(root) context=u:r:magisk:s0
+22d9:2765
 ```
 
----
+## 9. Verify physical USB reconnect
 
-# 20. Verify USB From Linux
+After the reboot test succeeds:
 
-```bash
-lsusb
-```
-
-The working phone was detected as:
-
-```text
-22d9:2765 OPPO Electronics Corp. Oppo N1
-```
-
----
-
-# 21. Test scrcpy
-
-Once ADB is working:
-
-```bash
-scrcpy
-```
-
-ADB shell:
-
-```bash
-adb shell
-```
-
-Install an APK:
-
-```bash
-adb install app.apk
-```
-
-Copy a file to the phone:
-
-```bash
-adb push file /sdcard/
-```
-
-Copy a file from the phone:
-
-```bash
-adb pull /sdcard/file
-```
-
-Reboot:
-
-```bash
-adb reboot
-```
-
----
-
-# 22. Full Snapshot Restore
-
-The repository also contains complete snapshots:
-
-```text
-backup/persistent_properties
-backup/settings_global.xml
-backup/adb_keys
-```
-
-These should be treated as **device/build-specific snapshots**.
-
-Use them only when recovering the same:
-
-```text
-RMX1901
-Android 10
-RMX1901_11_C.11
-```
-
-The recommended recovery method after a data wipe is the **surgical patching method above**, because it changes only the settings required for ADB instead of replacing the entire fresh Android settings database.
-
----
-
-# 23. Optional: Restore the Magisk Service Script
-
-The script is stored at:
-
-```text
-scripts/usb-adb.sh
-```
-
-To restore it:
-
-```bash
-adb push ../scripts/usb-adb.sh \
-    /data/local/tmp/usb-adb.sh
-```
+1. Disconnect the USB cable.
+2. Wait 5–10 seconds.
+3. Reconnect it.
 
 Then:
 
-```bash
-adb shell "
-su -c '
-mkdir -p /data/adb/service.d
-
-cp /data/local/tmp/usb-adb.sh \
-   /data/adb/service.d/usb-adb.sh
-
-chown 0:0 \
-   /data/adb/service.d/usb-adb.sh
-
-chmod 755 \
-   /data/adb/service.d/usb-adb.sh
-
-rm -f /data/local/tmp/usb-adb.sh
-'
-"
+```fish
+lsusb | grep -iE '22d9|18d1|2765|4ee8'
 ```
 
-Verify:
-
-```bash
-adb shell "
-su -c '
-ls -lZ /data/adb/service.d/usb-adb.sh
-'
-"
+```fish
+adb devices
 ```
 
-Expected:
+Expected again:
 
 ```text
--rwxr-xr-x 1 root root ... usb-adb.sh
+22d9:2765
 ```
 
-## Important
-
-The current Magisk 24.2 installation reported:
+and:
 
 ```text
-service.d: exec [usb-adb.sh]
-execve /sbin/.magisk/busybox/busybox failed with 2
+8546e62c    device
 ```
 
-Therefore this script should be considered **optional** until the Magisk BusyBox issue is resolved.
+This physical reconnect test was successful on the known-good configuration.
 
----
+## 10. Known-good backup
 
-# 24. Verify Repository Integrity
+Once the phone is confirmed working, save the exact live persistent-properties file:
 
-From the repository root:
-
-```bash
+```fish
 cd ~/Documents/realme-x-headless-adb
+
+adb exec-out 'cat /data/property/persistent_properties' \
+    > backup/persistent_properties-working
 ```
 
-Run:
+Do **not** overwrite `backup/persistent_properties`; keep that as the original clean backup.
 
-```bash
-sha256sum -c SHA256SUMS
+Verify the known-good file:
+
+```fish
+grep -aobE \
+    'persist.sys.allcommode|persist.sys.usb.config|persist.vendor.usb.config|persist.sys.usb.reboot.func|mtp,adb|midi' \
+    backup/persistent_properties-working
 ```
 
-Expected:
+For this known-good configuration, the relevant values should include:
 
 ```text
-backup/adb_keys: OK
-backup/persistent_properties: OK
-backup/settings_global.xml: OK
-scripts/patch_usb_vendor.py: OK
-scripts/usb-adb.sh: OK
+persist.sys.allcommode=true
+persist.sys.usb.config=mtp,adb
+persist.vendor.usb.config=mtp,adb
 ```
 
----
+`persist.sys.usb.reboot.func=midi` may still exist. That is expected; `allcommode=true` makes the reboot path use `persist.sys.usb.config` instead.
 
-# 25. Check for Private Keys Before Git Push
+## 11. Update SHA256SUMS
 
-Run:
+After creating the known-good backup:
 
-```bash
-find . -type f \( \
-    -name 'adbkey' -o \
-    -name 'adbkey.*' -o \
-    -name '*.pem' -o \
-    -name '*.p12' -o \
-    -name '*.pfx' -o \
-    -name '*.key' -o \
-    -name 'id_rsa' -o \
-    -name 'id_ed25519' \
-\) -print
+```fish
+sha256sum \
+    backup/persistent_properties-working \
+    >> SHA256SUMS
 ```
 
-Expected:
+For the repository scripts, also regenerate their hashes if you changed them:
+
+```fish
+sha256sum \
+    scripts/patch_headless.py \
+    scripts/usb-adb.sh \
+    > /tmp/realme-x-headless-adb-script-checksums
+```
+
+Merge/update those entries in `SHA256SUMS` rather than keeping stale hashes.
+
+## 12. Optional Magisk service script
+
+`/data/adb/service.d/usb-adb.sh` was observed by Magisk 24.2, but the same setup also produced a Magisk BusyBox execution error. Therefore the repository does **not** depend on that script for the primary recovery path.
+
+The persistent `allcommode=true` + `persist.sys.usb.config=mtp,adb` configuration is the tested solution.
+
+## 13. Cleaning up old experiment files
+
+After the final known-good backup is verified, remove only the temporary USB-property experiment files and boot logs. Keep the original and known-good backups.
+
+```fish
+rm -f \
+    info/persistent_properties-before-reboot-func-test \
+    info/persistent_properties-after-reboot-func-test \
+    info/persistent_properties-current \
+    info/persistent_properties-before-reboot-func-patch \
+    info/persistent_properties-reboot-func-mtp-adb \
+    info/persistent_properties-after-reboot-func-patch \
+    info/persistent_properties-after-failed-boot \
+    info/persistent_properties-before-allcommode-test \
+    info/persistent_properties-allcommode-test-installed
+```
+
+Remove old test-only patchers after the canonical patcher is installed:
+
+```fish
+rm -f \
+    scripts/patch_reboot_func.py \
+    scripts/patch_allcommode.py
+```
+
+The old `boot-capture` logs were diagnostic evidence and are no longer required for recovery:
+
+```fish
+rm -rf info/boot-capture
+```
+
+Do not delete the primary backups:
 
 ```text
-(no output)
+backup/adb_keys
+backup/persistent_properties
+backup/persistent_properties-working
+backup/settings_global.xml
+```
+
+## 14. Emergency recovery
+
+If Android starts but ADB disappears:
+
+1. Do not format `/data` again.
+2. Re-enter TWRP.
+3. Confirm `adb devices` shows `8546e62c    recovery`.
+4. Re-read `/data/property/persistent_properties` and compare it with `backup/persistent_properties-working`.
+5. Reinstall the known-good persistent-properties file if necessary.
+
+```fish
+adb push backup/persistent_properties-working \
+    /data/local/tmp/persistent_properties-working
+
+adb shell 'cat /data/local/tmp/persistent_properties-working > /data/property/persistent_properties'
+
+adb shell 'chown root:root /data/property/persistent_properties; chmod 600 /data/property/persistent_properties; chcon u:object_r:property_data_file:s0 /data/property/persistent_properties'
+```
+
+If `/data` is not mounted in TWRP, mount it first.
+
+## 15. GitHub privacy
+
+Keep this repository **private**.
+
+Safe to keep:
+
+```text
+backup/adb_keys
+backup/persistent_properties
+backup/persistent_properties-working
+backup/settings_global.xml
 ```
 
 Never commit:
 
 ```text
 ~/.android/adbkey
+~/.android/adbkey*private*
 ```
 
----
-
-# 26. Git Setup
-
-From the repository root:
-
-```bash
-cd ~/Documents/realme-x-headless-adb
-```
-
-Initialize:
-
-```bash
-git init
-```
-
-Add files:
-
-```bash
-git add .
-```
-
-Review:
-
-```bash
-git status
-```
-
-Create the first commit:
-
-```bash
-git commit -m "Backup working Realme X headless ADB setup"
-```
-
-Set the branch:
-
-```bash
-git branch -M main
-```
-
-Add the private GitHub repository:
-
-```bash
-git remote add origin <YOUR_PRIVATE_GITHUB_REPOSITORY>
-```
-
-Push:
-
-```bash
-git push -u origin main
-```
-
----
-
-# 27. Recovery Decision Tree
-
-## ADB works
-
-Run:
-
-```bash
-adb devices
-```
-
-If:
-
-```text
-8546e62c    device
-```
-
-No recovery is required.
-
----
-
-## Android boots but ADB does not work
-
-Boot TWRP and restore:
-
-```text
-persistent_properties
-adb_enabled
-adb_keys
-```
-
-Then reboot Android.
-
----
-
-## `/data` was formatted
-
-Boot TWRP.
-
-Use the **fresh-file patching procedure**:
-
-```text
-1. Pull fresh persistent_properties
-2. Patch USB configuration
-3. Set adb_enabled=1
-4. Restore adb_keys
-5. Verify permissions/context
-6. Reboot
-7. Verify adb
-```
-
----
-
-## Magisk root is missing
-
-The files in this repository do not contain the complete Magisk installation.
-
-A compatible Magisk package must be kept separately.
-
-After restoring/reinstalling Magisk, the optional:
-
-```text
-/data/adb/service.d/usb-adb.sh
-```
-
-script can be restored.
-
----
-
-# 28. Important Warnings
-
-## Do not factory-reset `/data`
-
-A data wipe removes the configuration required for headless ADB.
-
----
-
-## Do not blindly flash random firmware
-
-This backup is specific to:
-
-```text
-Realme X RMX1901
-Android 10
-Build RMX1901_11_C.11
-```
-
-Verify firmware compatibility before restoring system/data configuration files.
-
----
-
-## Do not restore the entire settings database unnecessarily
-
-Prefer changing only:
-
-```text
-adb_enabled=1
-```
-
-on a fresh `settings_global.xml`.
-
----
-
-## Do not commit private ADB keys
-
-Never upload:
-
-```text
-~/.android/adbkey
-```
-
-to GitHub.
-
----
-
-## Keep an offline copy
-
-Keep at least one copy outside GitHub:
-
-```text
-USB drive
-External HDD
-Another PC
-```
-
----
-
-# 29. Known Working Recovery Files
-
-| File | Purpose |
-|---|---|
-| `backup/persistent_properties` | Persistent Android USB configuration snapshot |
-| `backup/settings_global.xml` | Known-good settings snapshot |
-| `backup/adb_keys` | Authorized ADB public key |
-| `scripts/patch_usb_vendor.py` | Patches persistent USB properties |
-| `scripts/usb-adb.sh` | Optional Magisk boot-time ADB script |
-| `info/device-state.txt` | Device state captured during working setup |
-| `info/working-config.txt` | Human-readable working configuration |
-| `SHA256SUMS` | File integrity verification |
-
----
-
-# 30. Final Known-Good State
-
-The configuration was successfully verified after a normal reboot:
-
-```text
-Device: Realme X RMX1901
-Android: 10
-Build: RMX1901_11_C.11
-
-Bootloader:
-Unlocked
-
-AVB:
-orange
-
-ADB:
-Working
-
-Root:
-Working
-
-USB:
-MTP + ADB
-
-persist.sys.usb.config:
-mtp,adb
-
-persist.vendor.usb.config:
-<empty at runtime>
-
-sys.usb.config:
-mtp,adb
-
-adb_enabled:
-1
-
-Magisk:
-24.2
-```
-
-The phone can therefore be operated as a headless Android device through USB ADB without requiring a functional touchscreen.
+The host ADB private key must remain on the host only.

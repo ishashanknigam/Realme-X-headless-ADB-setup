@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">ਰੱਦ ਕਰੋ</string>
+    <string name="copy">ਕਾਪੀ ਕਰੋ</string>
+    <string name="cut">ਕੱਟੋ</string>
+    <string name="ok">ਠੀਕ ਹੈ</string>
+    <string name="paste">ਪੇਸਟ ਕਰੋ</string>
+    <string name="selectAll">ਸਾਰੇ ਚੁਣੋ</string>
+    <string name="allow">ਆਗਿਆ ਦਿਓ</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| ਨਵੇਂ ਸਿਸਟਮ ਦੀ ਤਿਆਰੀ ਹੋ ਰਹੀ ਹੈ, ਕਿਰਪਾ ਕਰਕੇ ਉਡੀਕ ਕਰੋ …</string>
+    <string name="android_upgrading_complete">ਰੰਗ OS ਸਫ਼ਲਤਾਵਪੂਕ ਅਪਗ੍ਰੇਡ ਹੋਇਆ</string>
+    <string name="android_upgrading_starting_apps">ਰੰਗ OS ਸਫ਼ਲਤਾਵਪੂਕ ਅਪਗ੍ਰੇਡ ਹੋਇਆ</string>
+    <string name="android_upgrading_title">ColorOS ਅਪਗ੍ਰੇਡ ਕਰ ਰਿਹਾ ਹੈ …</string>
+    <string name="autofill_save_no">ਬਾਅਦ ਵਿੱਚ</string>
+    <string name="autofill_save_title_with_2types">ਕੀ ਤੁਸੀਂ %2$s ਅਤੇ %1$s ਨੂੰ %3$s ਵਿੱਚ ਸੁਰੱਖਿਅਤ ਕਰਨਾ ਹੈ?</string>
+    <string name="autofill_save_type_username">ਖਾਤਾ</string>
+    <string name="autofill_save_yes">ਸੁਰੱਖਿਅਤ ਕਰੋ</string>
+    <string name="capability_title_canRequestFilterKeyEvents">ਦਰਜ ਕੀਤਾ ਟੈਕਸਟ ਮਾਨੀਟਰ ਕਰੋ</string>
+    <string name="deny">ਅਸਵੀਕਾਰ ਕਰੋ</string>
+    <string name="lockscreen_carrier_default">ਕੋਈ ਸੇਵਾ ਨਹੀਂ।</string>
+    <string name="notification_hidden_text">ਸੁਨੇਹੇ ਦੀ ਸਮੱਗਰੀ ਦੇਖਣ ਲਈ ਦਰਜ ਕਰੋ</string>
+    <string name="permgroupdesc_calendar">ਆਪਣਾ ਕੈਲੰਡਰ ਵਰਤੋ</string>
+    <string name="permgroupdesc_camera">ਤਸਵੀਰਾਂ ਲਓ ਅਤੇ ਵੀਡਿਓ ਬਣਾਓ</string>
+    <string name="permgroupdesc_microphone">ਔਡੀਓ ਰਿਕਾਰਡ ਕਰੋ</string>
+    <string name="permgroupdesc_phone">ਫੋਨ ਕਾੱਲਾਂ ਕਰੋ ਅਤੇ ਵਿਵਸਥਿਤ ਕਰੋ</string>
+    <string name="permgroupdesc_sensors">ਆਪਣੇ ਮਹੱਤਵਪੂਰਨ ਚਿੰਨ੍ਹਾਂ ਸਬੰਧੀ ਸੈਂਸਰ ਡਾਟਾ ਦੀ ਵਰਤੋਂ ਕਰੋ</string>
+    <string name="permgroupdesc_sms">SMS ਮੈਸੇਜ ਭੇਜੋ ਅਤੇ ਦੇਖੋ</string>
+    <string name="permgroupdesc_storage">"ਆਪਣੇ ਡਿਵਾਈਸ 'ਤੇ ਫੋਟੋਆਂ, ਮੀਡੀਆ ਸਮੱਗਰੀ, ਅਤੇ ਫਾਈਲਾਂ ਨੂੰ ਐਕਸੈਸ ਕਰੋ"</string>
+    <string name="permgrouplab_calendar">ਕੈਲੰਡਰ</string>
+    <string name="permgrouplab_camera">ਕੈਮਰਾ</string>
+    <string name="permgrouplab_contacts">ਸੰਪਰਕ</string>
+    <string name="permgrouplab_location">ਸਥਾਨ</string>
+    <string name="permgrouplab_microphone">ਮਾਈਕ੍ਰੋਫੋਨ</string>
+    <string name="permgrouplab_phone">ਫੋਨ</string>
+    <string name="permgrouplab_sensors">ਬਾਡੀ ਸੈਂਸਰ</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">ਸਟੋਰੇਜ</string>
+    <string name="perms_new_perm_prefix">ਨਵਾਂ:</string>
+    <string name="policylab_forceLock">ਸਕ੍ਰੀਨ ਲੌਕ ਕਰੋ</string>
+    <string name="policylab_resetPassword">ਲੌਕਸਕ੍ਰੀਨ ਪਾਸਕੋਡ ਬਦਲੋ</string>
+    <string name="policylab_wipeData">ਸਾਰਾ ਡਾਟਾ ਮਿਟਾਓ</string>
+    <string name="select_input_method">ਕੀਬੋਰਡ ਬਦਲੋ</string>
+    <string name="share">ਸਾਂਝਾ ਕਰੋ</string>
+    <string name="tethered_notification_message">ਸੈਟ ਅਪ ਲਈ ਟੈਪ ਕਰੋ</string>
+    <string name="vpn_text_long">\"%s\", ਨਾਲ ਕਨੈਕਟ ਕੀਤਾ। ਨੈਟਵਰਕ ਵਿਵਸਥਿਤ ਕਰਨ ਲਈ ਟੈਪ ਕਰੋ।</string>
+    <string name="zen_mode_default_every_night_name">ਸਲੀਪ</string>
+</resources>

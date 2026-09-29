@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cealaigh</string>
+    <string name="kg_login_password_hint">Paschód</string>
+    <string name="lockscreen_glogin_password_hint">Paschód</string>
+    <string name="notification_hidden_text">Iontráil chun inneachar teachtaireachta a fheiceáil</string>
+    <string name="zen_mode_default_every_night_name">Codladh</string>
+</resources>

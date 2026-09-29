@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="last_num_days">
+        <item quantity="one">O‘tgan %d kun</item>
+        <item quantity="other">O‘tgan %d kun</item>
+    </plurals>
+    <plurals name="matches_found">
+        <item quantity="one">1 ta natija</item>
+        <item quantity="other">Natija raqami %1$d (jami: %2$d)</item>
+    </plurals>
+    <plurals name="pinpuk_attempts">
+        <item quantity="one">%d ta urinish qoldi. Yana bir marta mos tushmasa, SIM qulflanadi.</item>
+        <item quantity="other">%d ta urinish qoldi. Yana bir marta mos tushmasa, SIM qulflanadi.</item>
+    </plurals>
+    <plurals name="restr_pin_countdown">
+        <item quantity="one">1 soniyadan keyin qayta urining</item>
+        <item quantity="other">%d soniyadan keyin qayta urining</item>
+    </plurals>
+    <plurals name="selected_count">
+        <item quantity="one">%1$d tasi tanlandi</item>
+        <item quantity="other">%1$d tasi tanlandi</item>
+    </plurals>
+    <plurals name="wifi_available">
+        <item quantity="one">Wi-Fi tarmog‘i bor</item>
+        <item quantity="other">Wi-Fi tarmoqlari bor</item>
+    </plurals>
+    <plurals name="wifi_available_detailed">
+        <item quantity="one">Ochiq Wi-Fi tarmog‘i bor</item>
+        <item quantity="other">Ochiq Wi-Fi tarmoqlari bor</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours">
+        <item quantity="one">1 soat</item>
+        <item quantity="other">%d soat</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_short">
+        <item quantity="one">1 soat</item>
+        <item quantity="other">%d soat</item>
+    </plurals>
+    <plurals name="zen_mode_duration_hours_summary_short">
+        <item quantity="one">1 soat (%2$s gacha)</item>
+        <item quantity="other">%1$d soat (%2$s gacha)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes">
+        <item quantity="one">1 daqiqa</item>
+        <item quantity="other">%d daqiqa</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_short">
+        <item quantity="one">1 daqiqa</item>
+        <item quantity="other">%d daqiqa</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary">
+        <item quantity="one">1 daqiqa (%2$s gacha)</item>
+        <item quantity="other">%1$d daqiqa (%2$s gacha)</item>
+    </plurals>
+    <plurals name="zen_mode_duration_minutes_summary_short">
+        <item quantity="one">1 daqiqa (%2$s gacha)</item>
+        <item quantity="other">%1$d daqiqa (%2$s gacha)</item>
+    </plurals>
+</resources>

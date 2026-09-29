@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="emailAddressTypes">
+        <item>వ్యక్తిగత</item>
+        <item>పని</item>
+        <item>ఇతరాలు</item>
+        <item>వినియోగదారునికి అనుకూలంగాచేయు</item>
+    </string-array>
+    <string-array name="imProtocols">
+        <item>AIM</item>
+        <item>Windows Live</item>
+        <item>Yahoo</item>
+        <item>Skype</item>
+        <item>QQ</item>
+        <item>Google Talk</item>
+        <item>ICQ</item>
+        <item>Jabber</item>
+    </string-array>
+    <string-array name="organizationTypes">
+        <item>పని</item>
+        <item>ఇతర</item>
+        <item>వాడుక</item>
+    </string-array>
+    <string-array name="phoneTypes">
+        <item>మొదటికి</item>
+        <item>ఫోను</item>
+        <item>ప్రమాణం</item>
+        <item>కార్యాలయ ఫ్యాక్స్</item>
+        <item>ఇంటి ఫ్యాక్స్</item>
+        <item>పేజర్</item>
+        <item>ఇతరాలు</item>
+        <item>వినియోగదారునికి అనుకూలంగాచేయు</item>
+    </string-array>
+    <string-array name="postalAddressTypes">
+        <item>మొదటికి</item>
+        <item>పని</item>
+        <item>ఇతర</item>
+        <item>వాడుక</item>
+    </string-array>
+    <string-array name="imAddressTypes">
+        <item>మొదటికి</item>
+        <item>పని</item>
+        <item>ఇతరాలు</item>
+        <item>వినియోగదారునికి అనుకూలంగాచేయు</item>
+    </string-array>
+</resources>

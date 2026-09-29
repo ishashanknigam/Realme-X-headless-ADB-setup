@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">បោះបង់</string>
+    <string name="copy">ចម្លង</string>
+    <string name="cut">កាត់</string>
+    <string name="ok">ព្រម</string>
+    <string name="paste">បិទភ្ជាប់</string>
+    <string name="selectAll">ជ្រើសទាំងអស់</string>
+    <string name="allow">អនុញ្ញាត</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| កំពុងរៀបចំប្រព័ន្ធថ្មី សូមរង់ចាំ …</string>
+    <string name="android_upgrading_complete">បានដំឡើងជំនាន់ ColorOS ដោយជោគជ័យ</string>
+    <string name="android_upgrading_starting_apps">បានដំឡើងជំនាន់ ColorOS ដោយជោគជ័យ</string>
+    <string name="android_upgrading_title">កំពុងដំឡើងជំនាក់ ColorOS …</string>
+    <string name="autofill_save_no">នៅពេលក្រោយ</string>
+    <string name="autofill_save_title_with_2types">រក្សាទុក %2$s និង %1$s ទៅ %3$s ឬ?</string>
+    <string name="autofill_save_type_username">គណនី</string>
+    <string name="autofill_save_yes">រក្សាទុក</string>
+    <string name="capability_title_canRequestFilterKeyEvents">តាមដានអត្ថបទដែលអ្នកវាយបញ្ចូល</string>
+    <string name="deny">បដិសេធ</string>
+    <string name="lockscreen_carrier_default">គ្មានសេវា។</string>
+    <string name="notification_hidden_text">បញ្ចូលដើម្បីមើលមាតិកាសារ</string>
+    <string name="permgroupdesc_calendar">ចូលប្រើប្រតិទិនរបស់អ្នក</string>
+    <string name="permgroupdesc_camera">ថតរូបថត និងវីដេអូ</string>
+    <string name="permgroupdesc_microphone">ថតអូឌីយ៉ូ</string>
+    <string name="permgroupdesc_phone">ធ្វើ និងគ្រប់គ្រងការហៅទូរស័ព្ទ</string>
+    <string name="permgroupdesc_sensors">ចូលប្រើទិន្នន័យអង្គចាប់យកស្នាមម្រាមដៃដែលទាក់ទងនឹងសញ្ញាសំខាន់របស់អ្នក</string>
+    <string name="permgroupdesc_sms">ផ្ញើ និងមើលសារ SMS</string>
+    <string name="permgroupdesc_storage">ចូលប្រើរូបថត មាតិកាមេឌៀ និងឯកសារនៅលើឧបករណ៍របស់អ្នក</string>
+    <string name="permgrouplab_calendar">ប្រតិទិន</string>
+    <string name="permgrouplab_camera">ម៉ាស៊ីនថត</string>
+    <string name="permgrouplab_contacts">ឈ្មោះទំនាក់ទំនង</string>
+    <string name="permgrouplab_location">ទីតាំង៖</string>
+    <string name="permgrouplab_microphone">មីក្រូហ្វូន</string>
+    <string name="permgrouplab_phone">ទូរស័ព្ទ</string>
+    <string name="permgrouplab_sensors">អង្គចាប់យករាងកាយ</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">កន្លែងផ្ទុក</string>
+    <string name="perms_new_perm_prefix">ថ្មី:</string>
+    <string name="policylab_forceLock">ចាក់សោអេក្រង់</string>
+    <string name="policylab_resetPassword">ផ្លាស់ប្ដូរកូដសម្ងាត់ចាក់សោអេក្រង់</string>
+    <string name="policylab_wipeData">លុបទិន្នន័យទាំងអស់</string>
+    <string name="select_input_method">ប្តូ​រ​ក្តា​រ​ចុច</string>
+    <string name="share">ចែករំលែក</string>
+    <string name="tethered_notification_message">ប៉ះដើម្បីបង្កើត</string>
+    <string name="vpn_text_long">បានភ្ជាប់ទៅ %s។ ប៉ះដើម្បីគ្រប់គ្រងបណ្តាញ។</string>
+    <string name="zen_mode_default_every_night_name">គេង</string>
+</resources>

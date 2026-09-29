@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">ବାତିଲ୍‌ କରନ୍ତୁ</string>
+    <string name="copy">କପି</string>
+    <string name="cut">କଟ୍‌</string>
+    <string name="ok">ଠିକ୍</string>
+    <string name="paste">ପେଷ୍ଟ</string>
+    <string name="selectAll">ସବୁ ବାଛନ୍ତୁ</string>
+    <string name="allow">ଅନୁମତି ଦିଅନ୍ତୁ</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| ନୂତନ ସିଷ୍ଟମ୍‌ ପ୍ରସ୍ତୁତ କରୁଛି, ଦୟାକରି ଅପେକ୍ଷା କରନ୍ତୁ …</string>
+    <string name="android_upgrading_complete">ColorOS ସଫଳତାପୂର୍ବକ ଅପଗ୍ରେଡ ହେଲା</string>
+    <string name="android_upgrading_starting_apps">ColorOS ସଫଳତାପୂର୍ବକ ଅପଗ୍ରେଡ ହେଲା</string>
+    <string name="android_upgrading_title">ColorOS କୁ ଅପଗ୍ରେଡ କରୁଛି …</string>
+    <string name="autofill_save_no">ପରେ</string>
+    <string name="autofill_save_title_with_2types">%2$s ଏବଂ %1$s ରେ %3$s ଭାବେ ସଞ୍ଚିତ କରିବେ କି?</string>
+    <string name="autofill_save_type_username">ଆକାଉଣ୍ଟ</string>
+    <string name="autofill_save_yes">ସଞ୍ଚୟ କରନ୍ତୁ</string>
+    <string name="capability_title_canRequestFilterKeyEvents">ପ୍ରବେଶ କରାଯାଇଥିବା ଟେକ୍ସଟ୍ ମନିଟର୍‌ କରନ୍ତୁ</string>
+    <string name="deny">ମନାକରନ୍ତୁ</string>
+    <string name="lockscreen_carrier_default">ସର୍ଭିସ୍‌ ନାହିଁ.</string>
+    <string name="notification_hidden_text">ମେସେଜ ବିଷୟବସ୍ତୁ ଦେଖିବା ପାଇଁ ପ୍ରବେଶ କରନ୍ତୁ</string>
+    <string name="permgroupdesc_calendar">ନିଜର କ୍ୟାଲେଣ୍ଡର୍‌ ଆକସେସ୍‍ କରନ୍ତୁ</string>
+    <string name="permgroupdesc_camera">ଫଟୋ ଏବଂ ଭିଡିଓଗୁଡିକ ନିଅନ୍ତୁ</string>
+    <string name="permgroupdesc_microphone">ଅଡିଓ ରେକର୍ଡ଼ କରନ୍ତୁ</string>
+    <string name="permgroupdesc_phone">ଫୋନ୍‍ କଲ୍‍ କରନ୍ତୁ ଏବଂ ପରିଚାଳନା କରନ୍ତୁ</string>
+    <string name="permgroupdesc_sensors">ଆପଣଙ୍କ ପ୍ରଧାନ ଲକ୍ଷଣଗୁଡିକ ସମ୍ବନ୍ଧିତ ସେନ୍ସର୍‌ ଡାଟା ଆକସେସ୍ କରନ୍ତୁ</string>
+    <string name="permgroupdesc_sms">SMS ମେସେଜଗୁଡିକ ପ୍ରେରଣ କରନ୍ତୁ ଏବଂ ଦେଖନ୍ତୁ</string>
+    <string name="permgroupdesc_storage">ନିଜର ଡିଭାଇସ୍ ରେ ଫଟୋ, ମିଡିଆ ବିଷୟବସ୍ତୁ ଏବଂ ଫାଇଲ୍ ଗୁଡ଼ିକ ଆକ୍ସେସ୍ କରନ୍ତୁ</string>
+    <string name="permgrouplab_calendar">କ୍ୟାଲେଣ୍ଡର୍‌</string>
+    <string name="permgrouplab_camera">କ୍ୟାମେରା</string>
+    <string name="permgrouplab_contacts">ଯୋଗାଯୋଗ</string>
+    <string name="permgrouplab_location">ଲୋକେସନ୍‌</string>
+    <string name="permgrouplab_microphone">ମାଇକ୍ରୋଫୋନ୍</string>
+    <string name="permgrouplab_phone">ଫୋନ୍</string>
+    <string name="permgrouplab_sensors">ଶରୀର ସେନ୍ସର୍‌</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">ଷ୍ଟୋରେଜ୍</string>
+    <string name="perms_new_perm_prefix">ନୁଆ:</string>
+    <string name="policylab_forceLock">ସ୍କ୍ରିନ୍‌ ଲକ୍‌ କରନ୍ତୁ</string>
+    <string name="policylab_resetPassword">ଲକସ୍କ୍ରିନ୍‍ ପାସକୋଡ୍‍ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="policylab_wipeData">ସମସ୍ତ ଡାଟା ହଟାନ୍ତୁ</string>
+    <string name="select_input_method">କୀବୋର୍ଡ ପରିବର୍ତ୍ତନ କରନ୍ତୁ</string>
+    <string name="share">ଅଂଶୀଦାର</string>
+    <string name="tethered_notification_message">ସେଟ୍‌ ଅପ୍‌ କରିବାକୁ ଟ୍ୟାପ୍‌ କରନ୍ତୁ</string>
+    <string name="vpn_text_long">\"%s\"କୁ ସଂଯୋଜିତ ହେଲା. ନେଟ୍‌ୱାର୍କ ପରିଚାଳନା କରିବାକୁ ଟ୍ୟାପ୍‌ କରନ୍ତୁ.</string>
+    <string name="zen_mode_default_every_night_name">ସୁପ୍ତ</string>
+</resources>

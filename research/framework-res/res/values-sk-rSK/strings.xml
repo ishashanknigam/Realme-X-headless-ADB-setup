@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Zrušiť</string>
+    <string name="cut">Vystrihnúť</string>
+    <string name="paste">Prilepiť</string>
+    <string name="selectAll">Vyb. vš.</string>
+    <string name="add_account_label">Pridať účet</string>
+    <string name="autofill_save_no">Neskôr</string>
+    <string name="autofill_save_title_with_2types">Uložiť %2$s a %1$s do %3$s?</string>
+    <string name="autofill_save_type_username">Účet</string>
+    <string name="autofill_save_yes">Uložiť</string>
+    <string name="date_and_time" formatted="false">%-k:%M:%S %-e. %-m. %Y</string>
+    <string name="date_time">%2$s %1$s</string>
+    <string name="decline_remote_bugreport_action">Odmietnuť</string>
+    <string name="global_action_emergency">Núdzový hovor</string>
+    <string name="imProtocolQq">Konverzácia</string>
+    <string name="kg_login_password_hint">Heslo</string>
+    <string name="lockscreen_emergency_call">Pohotovosť</string>
+    <string name="lockscreen_glogin_password_hint">Heslo</string>
+    <string name="month_day_year" formatted="false">%-e. %B %Y</string>
+    <string name="notification_hidden_text">Vstúpte na zobrazenie obsahu správy</string>
+    <string name="perm_costs_money">Môžu sa účtovať poplatky</string>
+    <string name="permgroupdesc_storage">Pristupovať k fotografiám, mediálnemu obsahu a súborom na zariadení</string>
+    <string name="policylab_resetPassword">Zmeniť heslo uzamknutej obrazovky</string>
+    <string name="relationTypeFriend">Kamarát</string>
+    <string name="share_remote_bugreport_action">Zdieľať</string>
+    <string name="sms">Správa</string>
+    <string name="ssl_certificate">Bezpečnostný certifikát</string>
+    <string name="time_of_day" formatted="false">%-k:%M:%S</string>
+    <string name="user_switching_message">Prepína sa na účet %1$s…</string>
+    <string name="zen_mode_default_every_night_name">Spánok</string>
+</resources>

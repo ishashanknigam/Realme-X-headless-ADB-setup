@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_mode_done">Fertig</string>
+    <string name="add_account_label">Konto hinzufügen</string>
+    <string name="autofill_save_no">Später</string>
+    <string name="autofill_save_title_with_2types">Speichern %2$sund %1$s in %3$s?</string>
+    <string name="autofill_save_type_username">Konto</string>
+    <string name="autofill_save_yes">Speichern</string>
+    <string name="decline_remote_bugreport_action">Ablehnen</string>
+    <string name="global_action_emergency">Notruf</string>
+    <string name="permgroupdesc_storage">Fotos-, Medieninhalte- und Dateien-Zugriff auf Ihrem Gerät</string>
+    <string name="relationTypeAssistant">Assistent</string>
+    <string name="share_remote_bugreport_action">Teilen</string>
+    <string name="sms">Nachricht</string>
+    <string name="ssl_certificate">Sicherheitszertifikat</string>
+    <string name="zen_mode_default_every_night_name">Schlafen</string>
+</resources>

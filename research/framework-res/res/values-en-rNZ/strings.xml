@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cancel">Cancel</string>
+    <string name="copy">Copy</string>
+    <string name="cut">Cut</string>
+    <string name="ok">OK</string>
+    <string name="paste">Paste</string>
+    <string name="selectAll">Select All</string>
+    <string name="allow">Allow</string>
+    <string name="android_upgrading_apk">%1$d| %2$d| preparing new system, please wait …</string>
+    <string name="android_upgrading_complete">Finishing boot</string>
+    <string name="android_upgrading_starting_apps">Finishing boot</string>
+    <string name="android_upgrading_title">ColorOS is upgrading</string>
+    <string name="autofill_save_no">Later</string>
+    <string name="autofill_save_title_with_2types">Save %2$s and %1$s to %3$s?</string>
+    <string name="autofill_save_type_username">Account</string>
+    <string name="autofill_save_yes">Save</string>
+    <string name="capability_title_canRequestFilterKeyEvents">Monitor the text you type</string>
+    <string name="date_and_time" formatted="false">%-e/%m/%Y, %-l:%M:%S %p</string>
+    <string name="date_time">%1$s, %2$s</string>
+    <string name="deny">Deny</string>
+    <string name="lockscreen_carrier_default">No service</string>
+    <string name="month_day_year" formatted="false">%-e %B %Y</string>
+    <string name="notification_hidden_text">Enter to view message content</string>
+    <string name="permgroupdesc_calendar">Access your calendar</string>
+    <string name="permgroupdesc_camera">Take photos and videos</string>
+    <string name="permgroupdesc_microphone">Record Audio</string>
+    <string name="permgroupdesc_phone">Make and manage phone calls</string>
+    <string name="permgroupdesc_sensors">Access sensor data related to your vital signs</string>
+    <string name="permgroupdesc_sms">Send and view SMS messages</string>
+    <string name="permgroupdesc_storage">Access photos, media content and files on your device</string>
+    <string name="permgrouplab_calendar">Calendar</string>
+    <string name="permgrouplab_camera">Camera</string>
+    <string name="permgrouplab_contacts">Contacts</string>
+    <string name="permgrouplab_location">Location</string>
+    <string name="permgrouplab_microphone">Microphone</string>
+    <string name="permgrouplab_phone">Phone</string>
+    <string name="permgrouplab_sensors">Body sensor</string>
+    <string name="permgrouplab_sms">SMS</string>
+    <string name="permgrouplab_storage">Storage</string>
+    <string name="perms_new_perm_prefix">NEW:</string>
+    <string name="policylab_forceLock">Lock the screen</string>
+    <string name="policylab_resetPassword">Change the lock screen passcode</string>
+    <string name="policylab_wipeData">Erase all data</string>
+    <string name="select_input_method">Change keyboard</string>
+    <string name="share">Share</string>
+    <string name="tethered_notification_message">Tap to set up</string>
+    <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>
+    <string name="vpn_text_long">Connected to %s; tap to manage the network</string>
+    <string name="zen_mode_default_every_night_name">Sleep</string>
+</resources>
