@@ -348,16 +348,20 @@ This physical reconnect test was successful on the known-good configuration.
 
 ## 10. Known-good backup
 
-Once the phone is confirmed working, save the exact live persistent-properties file:
+Once the phone is confirmed working (after passing the reboot, USB reconnect, and Wi-Fi ADB tests), save the exact live persistent-properties file using a binary-safe method directly from the device:
 
 ```fish
 cd ~/Documents/realme-x-headless-adb
 
-adb exec-out 'cat /data/property/persistent_properties' \
-    > backup/persistent_properties-working
+adb shell 'su -c "cp /data/property/persistent_properties /data/local/tmp/persistent_properties-working"'
+adb shell 'su -c "chmod 666 /data/local/tmp/persistent_properties-working"'
+adb pull /data/local/tmp/persistent_properties-working backup/persistent_properties-working
+adb shell 'rm /data/local/tmp/persistent_properties-working'
 ```
 
-Do **not** overwrite `backup/persistent_properties`; keep that as the original clean backup.
+**CRITICAL NOTE**: `backup/persistent_properties-working` is the ONLY actually tested working backup. Do **not** overwrite `backup/persistent_properties`; keep that as the original baseline for historical reference. The original baseline (`backup/persistent_properties`) is NOT the final working configuration and should not be restored directly.
+
+Also, **NEVER** use `adb shell cat ... > local-file` as it captures shell output incorrectly and causes CRLF corruption, destroying the binary format. If you see an old invalid 61-byte file containing "Permission denied", it is invalid and must not be used as a recovery backup.
 
 Verify the known-good file:
 
@@ -398,11 +402,11 @@ sha256sum \
 
 Merge/update those entries in `SHA256SUMS` rather than keeping stale hashes.
 
-## 12. Optional Magisk service script
+## 12. Magisk Service Scripts and CRLF Corruption
 
-`/data/adb/service.d/usb-adb.sh` was observed by Magisk 24.2, but the same setup also produced a Magisk BusyBox execution error. Therefore the repository does **not** depend on that script for the primary recovery path.
+`/data/adb/service.d/usb-adb.sh` was previously observed to cause catastrophic failures. Shell scripts created on Windows receive DOS/CRLF (`\r\n`) line endings. When Magisk executed this script, `resetprop` injected carriage returns into the device's persistent properties (e.g., `mtp,adb\r`), completely breaking Android's `init` USB triggers and disabling ADB.
 
-The persistent `allcommode=true` + `persist.sys.usb.config=mtp,adb` configuration is the tested solution.
+Therefore, the repository does **not** depend on that script. Ensure it is fully removed (`adb shell rm -f /data/adb/service.d/usb-adb.sh.disabled`). The persistent `allcommode=true` + `persist.sys.usb.config=mtp,adb` configuration fixed inside the `persistent_properties` binary is the only safe and tested solution.
 
 ## 13. Cleaning up old experiment files
 
@@ -516,3 +520,13 @@ tcp6 ... :::5555 ... LISTEN
 ```
 
 The configuration was tested successfully across a complete Android reboot. The phone's DHCP address may change, so use the current Wi-Fi IP when connecting.
+
+## 17. Troubleshooting
+
+### Charger Boot Mode and scrcpy `input` Error
+If you plug the phone into power while it is turned completely offline, the bootloader starts Android in `charger` mode (`ro.bootmode=charger`). In this offline-charging state, Android deliberately does NOT start the `system_server` or the `input` service.
+
+If you attempt to run `scrcpy` while the device is in charger mode, it will fail with:
+`java.lang.IllegalStateException: ServiceNotFoundException: No service published for: input`
+
+This is completely normal and not a bug. Simply turn on the phone normally using the power button to reach full Android.
